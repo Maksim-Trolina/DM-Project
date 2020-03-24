@@ -23,7 +23,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="COM_NN_D.h">
+    <ClInclude Include="Modules.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

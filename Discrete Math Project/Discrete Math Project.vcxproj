@@ -151,7 +151,7 @@
     <ClCompile Include="Discrete Math Project.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="COM_NN_D.h" />
+    <ClInclude Include="Modules.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
