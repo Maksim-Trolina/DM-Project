@@ -1,6 +1,4 @@
-﻿
-
-#include <iostream>
+﻿#include <iostream>
 #include "COM_NN_D.h"
 
 using namespace std;
@@ -13,7 +11,7 @@ int main()
     int b[2];
     b[0] = 3;
     b[1] = 5;
-    cout << COM_NN_D(2, a, b);
+    cout << COM_NN_D(2, 2, a, b);
 }
 
 
