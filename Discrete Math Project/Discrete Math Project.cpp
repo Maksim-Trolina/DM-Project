@@ -5,13 +5,16 @@ using namespace std;
 
 int main()
 {
-    int a[2];
-    a[0] = 1;
+    int a[4];
+    a[0] = 9;
     a[1] = 2;
-    int b[2];
-    b[0] = 1;
-    b[1] = 3;
-    cout << COM_NN_D(2, 2, a, b);
+    a[2] = 0;
+    a[3] = 3;
+    int* b = MUL_ND_N(4, a, 9);
+    for (int i = 0; i < 5; i++) {
+        cout << b[i];
+    }
+
 }
 
 
