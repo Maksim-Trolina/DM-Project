@@ -1,5 +1,5 @@
 
-int* MUL_ND_N(int lenNumber,int number[], int digit) {
+int* MUL_ND_N(int lenNumber,int number[], int digit,int& lenOutput) {
 
 	int flag = 0;
 	int currentDigit;
@@ -14,7 +14,9 @@ int* MUL_ND_N(int lenNumber,int number[], int digit) {
 		for (int i = 0; i < lenNumber; i++) {
 			newNumber[i + 1] = number[i];
 		}
+		lenOutput = lenNumber + 1;
 		return newNumber;
 	}
+	lenOutput = lenNumber;
 	return number;
 }

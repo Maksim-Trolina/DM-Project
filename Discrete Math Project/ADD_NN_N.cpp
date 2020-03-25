@@ -1,5 +1,5 @@
 #include "Modules.h"
-int* ADD_NN_N(int lenNumber1, int lenNumber2, int* lenSum, int number1[], int number2[]) {
+int* ADD_NN_N(int lenNumber1, int lenNumber2,int &lenOutput, int number1[], int number2[]) {
 	int flag = COM_NN_D(lenNumber1, lenNumber2, number1, number2);
 	int lenShortNumber;
 	int lenLongNumber;
@@ -32,14 +32,14 @@ int* ADD_NN_N(int lenNumber1, int lenNumber2, int* lenSum, int number1[], int nu
 		decade = (currentDigit + decade) / 10;
 	}
 	if (decade != 0) {
-		*lenSum = lenLongNumber + 1;
-		int* sumNumbers = new int[*lenSum];
+		lenOutput = lenLongNumber + 1;
+		int* sumNumbers = new int[lenOutput];
 		sumNumbers[0] = 1;
-		for (int i = 0; i < *lenSum - 1; ++i) {
+		for (int i = 0; i < lenOutput - 1; ++i) {
 			sumNumbers[i + 1] = longNumber[i];
 		}
 		return sumNumbers;
 	}
-	*lenSum = lenLongNumber;
+	lenOutput = lenLongNumber;
 	return longNumber;
 }
