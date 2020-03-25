@@ -147,6 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ADD_NN_N.cpp" />
     <ClCompile Include="COM_NN_D.cpp" />
     <ClCompile Include="Discrete Math Project.cpp" />
     <ClCompile Include="MUL_ND_N.cpp" />
