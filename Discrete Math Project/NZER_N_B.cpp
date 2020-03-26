@@ -1,5 +1,4 @@
 bool* NZER_N_B(int number[])
-bool NZER_N_B(int number[])
 {
 	bool flag;
 	if (number)
@@ -10,9 +9,4 @@ bool NZER_N_B(int number[])
 	bool* CheckForZero = &flag;
 
 	return CheckForZero;
-    bool flag;
-    if (number[0] != 0)
-        return true;
-    else
-        return false;
 }
