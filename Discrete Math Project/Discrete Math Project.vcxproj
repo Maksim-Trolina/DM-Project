@@ -152,6 +152,7 @@
     <ClCompile Include="Discrete Math Project.cpp" />
     <ClCompile Include="MUL_ND_N.cpp" />
     <ClCompile Include="MUL_Nk_N.cpp" />
+    <ClCompile Include="NZER_N_B.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Modules.h" />
