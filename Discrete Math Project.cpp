@@ -17,7 +17,7 @@ int main()
     b[0] = 2;
     b[1] = 0;
     b[2] = 0;
-    int* c = MUL_NN_N(lenNumber + 1, lenNumber, len, a, b);
+    int* c = MUL_ND_N(lenNumber, b, 0, len);
     cout << len;
     cout << endl;
     for (int i = 0; i < len; i++) {
