@@ -4,26 +4,26 @@ using namespace std;
 
 int* ADD_1N_N(int lenNumber, int number[], int& lenOutput) {
 
-	int index = lenNumber - 1;
-	int* newNumber = new int[lenNumber];
-	for (int i = 0; i < lenNumber; i++) {
+	int* newNumber = new int[lenNumber + 1];
+	lenOutput = lenNumber;
+
+	for (int i = 0; i < lenNumber - 1; i++) {
 		newNumber[i] = number[i];
 	}
 
-	while (index >= 0 && newNumber[index] > 8) {
+	newNumber[lenNumber - 1] = number[lenNumber - 1] + 1;
+	int index = lenNumber - 1;
+	while (index>0 && newNumber[index] == 10) {
 		newNumber[index] = 0;
 		index--;
-	}
-	if (index >= 0) {
 		newNumber[index]++;
-		return newNumber;
 	}
-	lenOutput++;
-	int* newnewNumber = new int[lenOutput];
-	newnewNumber[0] = 1;
-	for (int i = 1; i < lenOutput; i++) {
-		newnewNumber[i] = 0;
+
+	if (newNumber[index] == 10) {
+		newNumber[lenNumber] = 0;
+		lenOutput = (lenNumber + 1);
+		newNumber[0] = 1;
 	}
-	return newnewNumber;
+	return newNumber;
 
 }

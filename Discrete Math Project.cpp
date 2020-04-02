@@ -6,22 +6,34 @@ using namespace std;
 
 int main()
 {
-    int* a = new int[3];
+    int* a = new int[4];
+    int* b = new int[3];
     int lenNumber = 3;
     int len = 0;
-    a[0] = 1;
-    a[1] = 2;
-    a[2] = 3;
-    int* b = MUL_ND_N(lenNumber, a, 0, len);
-    cout << len << endl;
+    a[0] = 9;
+    a[1] = 1;
+    a[2] = 0;
+    a[3] = 9;
+    b[0] = 2;
+    b[1] = 0;
+    b[2] = 0;
+    int* c = MUL_NN_N(lenNumber + 1, lenNumber, len, a, b);
+    cout << len;
+    cout << endl;
     for (int i = 0; i < len; i++) {
-        cout << b[i];
+        cout << c[i];
+    }
+    cout << endl;
+    cout << lenNumber + 1 << endl;
+    for (int i = 0; i < lenNumber+1; i++) {
+        cout << a[i];
     }
     cout << endl;
     cout << lenNumber << endl;
     for (int i = 0; i < lenNumber; i++) {
-        cout << a[i];
+        cout << b[i];
     }
+  
 }
 
 
