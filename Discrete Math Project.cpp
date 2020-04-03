@@ -10,6 +10,7 @@ int main()
     int* b = new int[3];
     int lenNumber = 3;
     int len = 0;
+    int len1 = 0;
     a[0] = 9;
     a[1] = 1;
     a[2] = 0;
@@ -18,22 +19,11 @@ int main()
     b[1] = 0;
     b[2] = 0;
     int* c = MUL_ND_N(lenNumber, b, 0, len);
-    cout << len;
-    cout << endl;
-    for (int i = 0; i < len; i++) {
-        cout << c[i];
+    int* r = SUB_NN_N(lenNumber + 1, len, len1, a, c);
+    for (int i = 0; i < len1; ++i) {
+        cout << r[i];
     }
-    cout << endl;
-    cout << lenNumber + 1 << endl;
-    for (int i = 0; i < lenNumber+1; i++) {
-        cout << a[i];
-    }
-    cout << endl;
-    cout << lenNumber << endl;
-    for (int i = 0; i < lenNumber; i++) {
-        cout << b[i];
-    }
-  
+    
 }
 
 

@@ -41,13 +41,12 @@ int* SUB_NN_N(int lenNumber1, int lenNumber2, int& lenOutput, int number1[], int
 		}
 		newNumber[i + diffLens] = currentDigit + decade * 10 - shortNumber[i];
 	}
-	for (int i = diffLens - 1; i >= 0 && decade == 1; --i) {
+	for (int i = diffLens - 1; i >= 0; --i) {
 		currentDigit = longNumber[i] - decade;
 		if (currentDigit >= 0) {
 			decade = 0;
 		}
 		newNumber[i] = currentDigit + decade * 10;
-
 	}
 	for (nonZeroPos = 0; nonZeroPos < lenLongNumber && newNumber[nonZeroPos] == 0; ++nonZeroPos);
 	if (nonZeroPos != 0) {
