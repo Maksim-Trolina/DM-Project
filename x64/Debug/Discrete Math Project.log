@@ -1,2 +1,4 @@
-﻿  Discrete Math Project.cpp
-  Discrete Math Project.vcxproj -> C:\Users\DONBASS\Desktop\DM-Project2\x64\Debug\Discrete Math Project.exe
+﻿  DIV_NN_N.cpp
+D:\GITGIT\GITGIT2\DM-Project\DIV_NN_N.cpp(14,13): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+D:\GITGIT\GITGIT2\DM-Project\DIV_NN_N.cpp(23,25): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  Discrete Math Project.vcxproj -> D:\GITGIT\GITGIT2\DM-Project\x64\Debug\Discrete Math Project.exe

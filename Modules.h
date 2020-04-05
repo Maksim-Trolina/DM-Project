@@ -23,7 +23,8 @@ int* ADD_1N_N(int lenNumber, int number[], int& lenOutput);
 int* MUL_NN_N(int lenNumber1, int lenNumber2, int& lenOutput, int number1[], int number2[]);
 
 //The first digit of dividing a larger number by a smaller one
-int DIV_NN_Dk(int lenNumber1, int lenNumber2, int number1[], int number2[]);
+int DIV_NN_Dk(int lenNumber1, int lenNumber2, int number1[], int number2[], int& position);
 
 //Subtract a natural other natural multiplied by a digit
 int* SUB_NDN_N(int lenNumber1, int lenNumber2, int& lenOutput, int digit, int number1[], int number2[]);
+

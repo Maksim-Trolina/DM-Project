@@ -23,7 +23,9 @@ int main()
     for (int i = 0; i < len1; ++i) {
         cout << r[i];
     }
-    
+
+
+	
 }
 
 

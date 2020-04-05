@@ -1,8 +1,11 @@
 #include "Modules.h"
 
-int DIV_NN_Dk(int lenNumber1, int lenNumber2, int number1[], int number2[]) {
+int DIV_NN_Dk(int lenNumber1, int lenNumber2, int number1[], int number2[], int& position) {
 
-	int position = 0;
+	if (!NZER_N_B(number1) || !NZER_N_B(number2)) {
+		return 0;
+	}
+	position = 0;
 	int flag = COM_NN_D(lenNumber1, lenNumber2, number1, number2);
 	int digit = 0;
 	int* cup;
