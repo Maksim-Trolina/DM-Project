@@ -37,3 +37,6 @@ int DIV_NN_Dk(int lenNumber1, int lenNumber2, int number1[], int number2[], int&
 //Subtract a natural other natural multiplied by a digit
 int* SUB_NDN_N(int lenNumber1, int lenNumber2, int& lenOutput, int digit, int number1[], int number2[]);
 
+//The ratio of dividing a larger by a smaller or equal
+int* DIV_NN_N(int lenNumber1, int lenNumber2, int& lenOutput, int number1[], int number2[]);
+
