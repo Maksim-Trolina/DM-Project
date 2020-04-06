@@ -22,6 +22,15 @@ int* ADD_1N_N(int lenNumber, int number[], int& lenOutput);
 //Multiplication of natural numbers
 int* MUL_NN_N(int lenNumber1, int lenNumber2, int& lenOutput, int number1[], int number2[]);
 
+//Multiplies a number by a number
+int* MUL_ND_N(int lenNumber, int number[], int digit, int& lenOutput);
+
+//Multiplies the number by 10 ^ k
+int* MUL_Nk_N(int lenNumber, int number[], int power, int& lenOutput);
+
+//Compares two numbers
+int COM_NN_D(int lenNumber1, int lenNumber2, int number1[], int number2[]);
+
 //The first digit of dividing a larger number by a smaller one
 int DIV_NN_Dk(int lenNumber1, int lenNumber2, int number1[], int number2[], int& position);
 
