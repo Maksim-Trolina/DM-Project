@@ -1,11 +1,11 @@
 #include "Modules.h"
 
-void MUL_ZM_Z(bool& sign) {
+void MUL_ZM_Z(int& sign,int number[]) {
 
-	if (sign) {
-
-		sign = false;
+	if (sign == 0 && NZER_N_B(number)) {
+		sign = 1;
 	}
-	else
-		sign = true;
+	else {
+		sign = 0;
+	}
 }

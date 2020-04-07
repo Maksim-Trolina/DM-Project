@@ -18,25 +18,16 @@ int main()
 
     b[0] = 9;
     b[1] = 9;
-
-    int* c = DIV_NN_N(lenNumber + 1, lenNumber-1, len, a, b);
-    cout << len << endl;
-
-    for (int i = 0; i < len; i++) {
-        cout << c[i];
-    }
-    cout << endl;
-    for (int i = 0; i < lenNumber + 1; i++) {
-        cout << a[i];
-    }
-    cout << endl;
-    for (int i = 0; i < lenNumber-1; i++) {
-        cout << b[i];
+    int* d = new int[1];
+    d[0] = 0;
+    int c = 0;
+    MUL_ZM_Z(c,d);
+    cout << c;
     }
     
 
 
 	
-}
+
 
 
