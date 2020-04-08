@@ -40,6 +40,9 @@ int* SUB_NDN_N(int lenNumber1, int lenNumber2, int& lenOutput, int digit, int nu
 //The ratio of dividing a larger by a smaller or equal
 int* DIV_NN_N(int lenNumber1, int lenNumber2, int& lenOutput, int number1[], int number2[]);
 
+//Remainder of division
+int* MOD_NN_N(int lenNumber1, int lenNumber2, int& lenOutput, int number1[], int number2[]);
+
 //Ñhange of sign
 void MUL_ZM_Z(int& sign,int number[]);
 
