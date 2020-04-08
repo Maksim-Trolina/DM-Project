@@ -49,3 +49,5 @@ int* ADD_ZZ_Z(int lenNumber1, int lenNumber2, int& lenOutput, int sign1, int sig
 //Integer multiplication
 int* MUL_ZZ_Z(int lenNumber1, int lenNumber2, int& lenOutput, int sign1, int sign2, int& signOutput, int number1[], int number2[]);
 
+//Integer check
+bool INT_Q_B(int lenNumber1, int lenNumber2, int number1[], int number2[]);
