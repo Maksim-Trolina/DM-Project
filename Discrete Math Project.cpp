@@ -19,9 +19,11 @@ int main()
     
 
     int len = 0;
-    int* c = MOD_NN_N(3, 2, len, a, b);
+    int sign = 0;
 
+    int* c = DIV_ZZ_Z(3, 2, len, 1, 1, sign, a, b);
     cout << len << endl;
+    cout << sign << endl;
     for (int i = 0; i < len; i++) {
         cout << c[i];
     }
@@ -35,7 +37,7 @@ int main()
     }
 
 	
-	int arr1[] = { 5, 8, 9, 1 };
+	/*int arr1[] = { 5, 8, 9, 1 };
 	int arr2[] = { 1, 3, 7 };
 	int d1 = 4;
 	int d2 = 3;
@@ -44,7 +46,7 @@ int main()
 
 	for (int i = 0; i < d+2; i++) {
 		cout << g[i];
-	}
+	}*/
 	
 }
     
