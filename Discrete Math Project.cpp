@@ -5,7 +5,7 @@
 using namespace std;
 
 int main()
-{
+{/*
     int* a = new int[3];
     int* b = new int[2];
 
@@ -35,18 +35,18 @@ int main()
     for (int i = 0; i < 2; i++) {
         cout << b[i];
     }
-
+	*/
 	
-	/*int arr1[] = { 5, 8, 9, 1 };
-	int arr2[] = { 1, 3, 7 };
-	int d1 = 4;
+	int arr1[] = { 1, 4};
+	int arr2[] = { 1, 3, 3 };
+	int d1 = 2;
 	int d2 = 3;
 	int d = 0;
 	int* g = GCF_NN_N(d1, d2, d, arr1, arr2);
 
-	for (int i = 0; i < d+2; i++) {
+	for (int i = 0; i < d; i++) {
 		cout << g[i];
-	}*/
+	}
 	
 }
     

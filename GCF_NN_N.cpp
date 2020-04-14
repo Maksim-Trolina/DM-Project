@@ -1,5 +1,4 @@
 #include "Modules.h"
-#include <iostream>
 
 using namespace std;
 
@@ -7,7 +6,6 @@ int* GCF_NN_N(int lenNumber1, int lenNumber2, int& lenOutput, int number1[], int
 
 
 	if ((!NZER_N_B(number1)) || (!NZER_N_B(number2))) {
-		cout << "Input is not correct!" << endl;
 		return 0;
 	}
 
@@ -18,51 +16,26 @@ int* GCF_NN_N(int lenNumber1, int lenNumber2, int& lenOutput, int number1[], int
 
 	for (int i = 0; i < lenNumber1; i++) {
 		localnumber1[i] = number1[i];
-		cout << localnumber1[i] << endl;
 	}
-
-	cout << endl;
-
 
 	for (int i = 0; i < lenNumber2; i++) {
 		localnumber2[i] = number2[i];
-		cout << localnumber2[i] << endl;
 	}
 
-	cout << endl;
 	int* answ;
-
 
 	switch (flag) {
 
 	case 2:
 
-		answ = MOD_NN_N(lenNumber1, lenNumber2, lenOutput, localnumber1, localnumber2);
-
-		while (NZER_N_B(answ)) {
-
-
-			for (int i = 0; i < lenNumber1; i++) {
-				localnumber1[i] = localnumber2[i];
-			}
-
-			for (int i = 0; i < lenOutput; i++) {
-				localnumber2[i] = answ[i];
-			}
+		do {
 
 			answ = MOD_NN_N(lenNumber1, lenNumber2, lenOutput, localnumber1, localnumber2);
-
-			lenNumber1 = lenNumber2;
-			lenNumber2 = lenOutput;
-		}
-		break;
-
-	default:
-
-		answ = MOD_NN_N(lenNumber1, lenNumber2, lenOutput, localnumber1, localnumber2);
-
-		while (NZER_N_B(answ)) {
-
+			
+			if (!NZER_N_B(answ)) {
+				lenOutput = lenNumber2;
+				return localnumber2;
+			}
 
 			for (int i = 0; i < lenNumber2; i++) {
 				localnumber1[i] = localnumber2[i];
@@ -72,13 +45,40 @@ int* GCF_NN_N(int lenNumber1, int lenNumber2, int& lenOutput, int number1[], int
 				localnumber2[i] = answ[i];
 			}
 
-			answ = MOD_NN_N(lenNumber1, lenNumber2, lenOutput, localnumber1, localnumber2);
-
 			lenNumber1 = lenNumber2;
 			lenNumber2 = lenOutput;
-
+			lenOutput = lenNumber1;
 		}
+		while (NZER_N_B(answ));
+
+		break;
+
+	default:
+
+		do {
+
+			answ = MOD_NN_N(lenNumber2, lenNumber1, lenOutput, localnumber2, localnumber1);
+
+			if (!NZER_N_B(answ)) {
+				lenOutput = lenNumber1;
+				return localnumber1;
+			}
+
+			for (int i = 0; i < lenNumber1; i++) {
+				localnumber2[i] = localnumber1[i];
+			}
+
+			for (int i = 0; i < lenOutput; i++) {
+				localnumber1[i] = answ[i];
+			}
+
+			lenNumber2 = lenNumber1;
+			lenNumber1 = lenOutput;
+			lenOutput = lenNumber2;
+		} while (NZER_N_B(answ));
+		
 		break;
 	}
-	return localnumber2;
+
+	return localnumber1;
 }
