@@ -6,24 +6,25 @@ using namespace std;
 
 int main()
 {
-	int arr1[] = { 1, 6};
-	int arr2[] = { 1, 4, 8};
-	int d1 = 2;
-	int d2 = 3;
-	int d = 0;
-	int* g = LCM_NN_N(d1, d2, d, arr1, arr2);
+	int arr1ch[] = { 4 };
+	int arr1zn[] = { 1, 2 };
+	int arr2ch[] = { 2 };
+	int arr2zn[] = { 3 };
 
-	for (int i = 0; i < d1; i++) {
-		cout << arr1[i] << endl;
-	}
 
-	for (int i = 0; i < d2; i++) {
-		cout << arr2[i] << endl;
-	}
+	int d1 = 1;
+	int d2 = 2;
+	int d3 = 1;
+	int d4 = 1;
 
-	for (int i = 0; i < d; i++) {
-		cout << g[i];
-	}
+	int sign1 = 1;
+	int sign2 = 0;
+
+	int lenDENoutput = 0;
+	int lenNUMoutput = 0;
+
+
+	ADD_QQ_Q(d1, d2, d3, d4, sign1, sign2, lenNUMoutput, lenDENoutput, arr1ch, arr1zn, arr2ch, arr2zn);
 	
 }
     

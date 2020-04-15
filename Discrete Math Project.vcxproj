@@ -149,6 +149,7 @@
   <ItemGroup>
     <ClCompile Include="ADD_1N_N.cpp" />
     <ClCompile Include="ADD_NN_N.cpp" />
+    <ClCompile Include="ADD_QQ_Q.cpp" />
     <ClCompile Include="ADD_ZZ_Z.cpp" />
     <ClCompile Include="COM_NN_D.cpp" />
     <ClCompile Include="Discrete Math Project.cpp" />
