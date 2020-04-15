@@ -67,8 +67,9 @@ int* SUB_ZZ_Z(int lenNumber1, int lenNumber2, int& lenOutput, int sign1, int sig
 //Least common multiple
 int* LCM_NN_N(int lenNumber1, int lenNumber2, int& lenOutput, int number1[], int number2[]);
 
+//Sum of fractions
 void ADD_QQ_Q(int NUMlennumber1, int DENlennumber1, int NUMlennumber2, int DENlennumber2, int sign1, int sign2, int& NUMlenOutput, int& DENlenOutput,
-	int NUMnumber1[], int DENnumber1[], int NUMnumber2[], int DENnumber2[]);
+	int NUMnumber1[], int DENnumber1[], int NUMnumber2[], int DENnumber2[], int NUMnewnumber[], int DENnewnumber[]);
 
 //Dividing of rational fractions
 void DIV_QQ_Q(int signNumerator1, int signNumerator2, int& signNumeratorOutput, int lenNumerator1, int lenNumerator2, int lenDenonimator1, int lenDenonimator2, int& lenNumeratorOutput, int& lenDenonimatorOutput, int numerator1[], int numerator2[], int** numeratorOutput, int denonimator1[], int denonimator2[], int** denonimatorOutput);

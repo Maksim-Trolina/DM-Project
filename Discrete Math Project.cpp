@@ -23,8 +23,20 @@ int main()
 	int lenDENoutput = 0;
 	int lenNUMoutput = 0;
 
+	int* NUM;
+	int* DEN;
 
-	ADD_QQ_Q(d1, d2, d3, d4, sign1, sign2, lenNUMoutput, lenDENoutput, arr1ch, arr1zn, arr2ch, arr2zn);
+	ADD_QQ_Q(d1, d2, d3, d4, sign1, sign2, lenNUMoutput, lenDENoutput, arr1ch, arr1zn, arr2ch, arr2zn, NUM, DEN);
+
+	for (int i = 0; i < lenNUMoutput; i++) {
+		cout << NUM[i];
+	}
+
+	cout << endl;
+
+	for (int i = 0; i < lenDENoutput; i++) {
+		cout << DEN[i];
+	}
 	
 }
     
