@@ -168,6 +168,7 @@
     <ClCompile Include="MUL_ZZ_Z.cpp" />
     <ClCompile Include="NZER_N_B.cpp" />
     <ClCompile Include="MUL_ZM_Z.cpp" />
+    <ClCompile Include="RED_Q_Q.cpp" />
     <ClCompile Include="SUB_NDN_N.cpp" />
     <ClCompile Include="SUB_NN_N.cpp" />
   </ItemGroup>

@@ -62,8 +62,8 @@ int* DIV_ZZ_Z(int lenNumber1, int lenNumber2, int& lenOutput, int sign1, int sig
 int* GCF_NN_N(int lenNumber1, int lenNumber2, int& lenOutput, int number1[], int number2[]);
 
 //Fraction reduction
-void RED_Q_Q(int lenNumerator1, int lenDenominator1, int lenNumerator2, int lenDenominator2, int& lenOutputNumerator, int& lenOutputDenominator,
-	int sign1, int sign2, int& signOutput, int numerator1[], int denominator1[], int numerator2[], int denominator2[], int* numeratorOutput, int* denominatorOutput);
+void RED_Q_Q(int lenNumerator, int lenDenominator, int& lenOutputNumerator, int& lenOutputDenominator,
+	 int numerator[], int denominator[], int numeratorOutput[], int denominatorOutput[]);
 
 //Substract two integers
 int* SUB_ZZ_Z(int lenNumber1, int lenNumber2, int& lenOutput, int sign1, int sign2, int& signOutput, int number1[], int number2[]);
