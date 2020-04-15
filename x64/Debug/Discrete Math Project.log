@@ -1,4 +1,20 @@
-﻿  Discrete Math Project.cpp
+﻿  ADD_NN_N.cpp
+  ADD_QQ_Q.cpp
+  ADD_ZZ_Z.cpp
+  Discrete Math Project.cpp
+  DIV_NN_Dk.cpp
+  DIV_NN_N.cpp
+  DIV_QQ_Q.cpp
+  DIV_ZZ_Z.cpp
   GCF_NN_N.cpp
+  INT_Q_B.cpp
+  LCM_NN_N.cpp
+  MOD_NN_N.cpp
+  MUL_NN_N.cpp
+  MUL_QQ_Q.cpp
+  MUL_ZZ_Z.cpp
+  MUL_ZM_Z.cpp
+  SUB_NDN_N.cpp
+  SUB_NN_N.cpp
   Создание кода...
-  Discrete Math Project.vcxproj -> D:\GITGIT\GITGIT2\DM-Project\x64\Debug\Discrete Math Project.exe
+D:\GITGIT\GITGIT2\DM-Project\MUL_NN_N.cpp : fatal error C1090: Произошел сбой при вызове API PDB, код ошибки "5": D:\GITGIT\GITGIT2\DM-Project\x64\Debug\vc142.pdb
