@@ -16,27 +16,33 @@ int main()
 	b[0] = 6;
 	b[1] = 0;
 
-	int* c = new int[3];
-	int* d = new int[2];
+
 	int len1 = 0;
 	int len2 = 0;
 
-	RED_Q_Q(3, 2, len1, len2, a, b, c, d);
+	Number num;
+	num.lenNumerator = 0;
+	num.lenDenominator = 0;
+	num.sign = 0;
+	num.numerator = new int[3];
+	num.denominator = new int[2];
+
+	RED_Q_Q(3, 2, num.lenNumerator, num.lenDenominator, a, b, num.numerator, num.denominator);
 
 	
 	
-	cout << len1 << endl;
-	for (int i = 0; i < len1; i++) {
-		cout << c[i];
+	cout << num.lenNumerator << endl;
+	for (int i = 0; i < num.lenNumerator; i++) {
+		cout << num.numerator[i];
 	}
 	cout << endl;
-	cout << len2 << endl;
-	for (int i = 0; i < len2; i++) {
-		cout << d[i];
-	}
-	*/
+	cout << num.lenDenominator << endl;
+	for (int i = 0; i < num.lenDenominator; i++) {
+		cout << num.denominator[i];
+	}*/
+	
 
-	int NUMarr1[] = { 3,0,1 };
+	/*int NUMarr1[] = { 3,0,1 };
 	int DENarr1[] = { 1 };
 
 	int NUMarr2[] = { 3,0,2 };
@@ -69,7 +75,7 @@ int main()
 
 	for (int i = 0; i < DENoutput; i++) {
 		cout << DENanswer[i];
-	}
+	}*/
 
 }
     

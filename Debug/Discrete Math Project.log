@@ -1,2 +1,22 @@
-﻿  Discrete Math Project.cpp
+﻿  ADD_NN_N.cpp
+  ADD_QQ_Q.cpp
+  ADD_ZZ_Z.cpp
+  DIV_NN_Dk.cpp
+  DIV_NN_N.cpp
+  DIV_QQ_Q.cpp
+  DIV_ZZ_Z.cpp
+  Discrete Math Project.cpp
+  GCF_NN_N.cpp
+  INT_Q_B.cpp
+  LCM_NN_N.cpp
+  MOD_NN_N.cpp
+  MUL_NN_N.cpp
+  MUL_QQ_Q.cpp
+  MUL_ZM_Z.cpp
+  MUL_ZZ_Z.cpp
+  RED_Q_Q.cpp
+  SUB_NDN_N.cpp
+  SUB_NN_N.cpp
+  Создание кода...
+  LINK : не найден или не выполнена сборка C:\Users\Trolina\Desktop\Discrete Math Project\Debug\Discrete Math Project.exe при последней инкрементной компоновке; выполняется полная компоновка
   Discrete Math Project.vcxproj -> C:\Users\Trolina\Desktop\Discrete Math Project\Debug\Discrete Math Project.exe
