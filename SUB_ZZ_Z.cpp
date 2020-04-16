@@ -19,7 +19,10 @@ int* SUB_ZZ_Z(int lenNumber1, int lenNumber2, int& lenOutput, int sign1, int sig
 			}
 			else if ((NZER_N_B(number1) == false) && (NZER_N_B(number2) == true))
 			{
-				signOutput = sign2 * (-1);
+				if (sign2 == 0)
+					signOutput = 1;
+				else
+					signOutput = 0;
 				return *newNumber = number2;
 			}
 			else
@@ -61,7 +64,10 @@ int* SUB_ZZ_Z(int lenNumber1, int lenNumber2, int& lenOutput, int sign1, int sig
 				}
 				else if ((NZER_N_B(number1) == false) && (NZER_N_B(number2) == true))
 				{
-					signOutput = sign2 * (-1);
+					if (sign2 == 0)
+						signOutput = 1;
+					else
+						signOutput = 0;
 					return *newNumber = number2;
 				}
 				else
