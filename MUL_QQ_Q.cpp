@@ -1,7 +1,8 @@
 #include "Modules.h"
-void MUL_QQ_Q(int signNumerator1, int signNumerator2, int& signNumeratorOutput, int lenNumerator1, int lenNumerator2, int lenDenonimator1, int lenDenonimator2, int& lenNumeratorOutput, int& lenDenonimatorOutput, int numerator1[], int numerator2[], int** numeratorOutput, int denonimator1[], int denonimator2[], int** denonimatorOutput) {
-	int* numRes = MUL_ZZ_Z(lenNumerator1, lenNumerator2, lenNumeratorOutput, signNumerator1, signNumerator2, signNumeratorOutput, numerator1, numerator2);
-	int* denumRes = MUL_NN_N(lenDenonimator1, lenDenonimator2, lenDenonimatorOutput, denonimator1, denonimator2);
-	*numeratorOutput = numRes;
-	*denonimatorOutput = denumRes;
+
+Fractions MUL_QQ_Q(Fractions frac1, Fractions frac2) {
+	Fractions newFrac;
+	newFrac.numerator = MUL_ZZ_Z(frac1.lenNumerator, frac2.lenNumerator, newFrac.lenNumerator, frac1.sign, frac2.sign, newFrac.sign, frac1.numerator, frac2.numerator);
+	newFrac.denominator = MUL_NN_N(frac1.lenDenominator, frac2.lenDenominator, newFrac.lenDenominator, frac1.denominator, frac2.denominator);
+	return newFrac;
 }

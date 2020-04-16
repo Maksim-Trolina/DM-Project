@@ -1,3 +1,14 @@
+//fractions number structure
+struct Fractions
+{
+	int* numerator;
+	int* denominator;
+	int sign;
+	int lenNumerator;
+	int lenDenominator;
+};
+
+
 //Compare the digits starting from the highest
 int COM_NN_D(int lenNumber1, int lenNumber2, int number1[], int number2[]);
 
@@ -75,17 +86,12 @@ int* LCM_NN_N(int lenNumber1, int lenNumber2, int& lenOutput, int number1[], int
 void ADD_QQ_Q(int NUMlennumber1, int DENlennumber1, int NUMlennumber2, int DENlennumber2, int sign1, int sign2, int& signOutputanswer, int& NUMlenOutput, int& DENlenOutput, int NUMnumber1[], int DENnumber1[], int NUMnumber2[], int DENnumber2[], int** NUMnewnumber, int** DENnewnumber);
 
 //Dividing of rational fractions
-void DIV_QQ_Q(int signNumerator1, int signNumerator2, int& signNumeratorOutput, int lenNumerator1, int lenNumerator2, int lenDenonimator1, int lenDenonimator2, int& lenNumeratorOutput, int& lenDenonimatorOutput, int numerator1[], int numerator2[], int** numeratorOutput, int denonimator1[], int denonimator2[], int** denonimatorOutput);
+//void DIV_QQ_Q(int signNumerator1, int signNumerator2, int& signNumeratorOutput, int lenNumerator1, int lenNumerator2, int lenDenonimator1, int lenDenonimator2, int& lenNumeratorOutput, int& lenDenonimatorOutput, int numerator1[], int numerator2[], int** numeratorOutput, int denonimator1[], int denonimator2[], int** denonimatorOutput);
+
+//void MUL_QQ_Q(int signNumerator1, int signNumerator2, int& signNumeratorOutput, int lenNumerator1, int lenNumerator2, int lenDenonimator1, int lenDenonimator2, int& lenNumeratorOutput, int& lenDenonimatorOutput, int numerator1[], int numerator2[], int** numeratorOutput, int denonimator1[], int denonimator2[], int** denonimatorOutput);
 
 //Multiplication of rational fractions
-void MUL_QQ_Q(int signNumerator1, int signNumerator2, int& signNumeratorOutput, int lenNumerator1, int lenNumerator2, int lenDenonimator1, int lenDenonimator2, int& lenNumeratorOutput, int& lenDenonimatorOutput, int numerator1[], int numerator2[], int** numeratorOutput, int denonimator1[], int denonimator2[], int** denonimatorOutput);
+Fractions MUL_QQ_Q(Fractions frac1, Fractions frac2);
 
-//numerical structure
-struct Number
-{
-	int* numerator;
-	int* denominator;
-	int sign;
-	int lenNumerator;
-	int lenDenominator;
-};
+//Dividing of rational fractions
+Fractions DIV_QQ_Q(Fractions frac1, Fractions frac2);

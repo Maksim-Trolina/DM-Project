@@ -77,6 +77,47 @@ int main()
 		cout << DENanswer[i];
 	}*/
 
+
+	Fractions frac1, frac2, fracRes;
+
+	frac1.lenNumerator = 2;
+	frac2.lenNumerator = 2;
+	frac1.lenDenominator = 3;
+	frac2.lenDenominator = 3;
+
+	frac1.sign = 1;
+	frac2.sign = 1;
+
+	frac1.numerator = new int[frac1.lenNumerator];
+	frac2.numerator = new int[frac2.lenNumerator];
+	frac1.denominator = new int[frac1.lenDenominator];
+	frac2.denominator = new int[frac1.lenDenominator];
+
+	frac1.numerator[0] = 1;
+	frac1.numerator[1] = 2;
+
+	frac2.numerator[0] = 9;
+	frac2.numerator[1] = 9;
+
+	frac1.denominator[0] = 9;
+	frac1.denominator[1] = 9;
+	frac1.denominator[2] = 8;
+
+	frac2.denominator[0] = 9;
+	frac2.denominator[1] = 9;
+	frac2.denominator[2] = 9;
+
+	fracRes = DIV_QQ_Q(frac1, frac2);
+
+	for (int i = 0; i < fracRes.lenNumerator; ++i) {
+		cout << fracRes.numerator[i];
+	}
+	cout << "\n";
+
+	for (int i = 0; i < fracRes.lenDenominator; ++i) {
+		cout << fracRes.denominator[i];
+	}
+
 }
     
 
