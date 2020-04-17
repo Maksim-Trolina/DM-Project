@@ -45,7 +45,7 @@ int main()
 		cout << "\n";
 	}*/
 
-	int degDerPol;
+	/*int degDerPol;
 	Fractions* derPol = DER_P_P(coefs, degPol, degDerPol);
 
 	for (int i = 0; i < degDerPol + 1; ++i) {
@@ -60,12 +60,21 @@ int main()
 			cout << derPol[i].denominator[j];
 		}
 		cout << " ";
-	}
+	}*/
 
 	/*Fractions res = MUL_QQ_Q(coefs[0], coefs[1]);
 
 	for (int i = 0; i < res.lenNumerator; ++i) {
 		cout << res.numerator[i];
 	}*/
+
+	int degPolRes;
+	Fractions* resPol = MUL_Pxk_P(coefs, degPol, 5, degPolRes);
+	for (int i = 0; i < degPolRes + 1; ++i) {
+		for (int j = 0; j < resPol[i].lenNumerator; ++j) {
+			cout << resPol[i].numerator[j];
+		}
+		cout << "\n";
+	}
 }
     

@@ -166,6 +166,7 @@
     <ClCompile Include="MUL_Nk_N.cpp" />
     <ClCompile Include="MUL_NN_N.cpp" />
     <ClCompile Include="MUL_PQ_P.cpp" />
+    <ClCompile Include="MUL_Pxk_P.cpp" />
     <ClCompile Include="MUL_QQ_Q.cpp" />
     <ClCompile Include="MUL_ZZ_Z.cpp" />
     <ClCompile Include="NZER_N_B.cpp" />

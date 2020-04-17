@@ -97,3 +97,6 @@ Fractions* MUL_PQ_P(Fractions* polinom, Fractions coef, int degPolinom);
 
 //Derivative of a polynomial
 Fractions* DER_P_P(Fractions* polinom, int degPoliom, int& degPolinomOutput);
+
+//Multiplying a polynomial by x^k
+Fractions* MUL_Pxk_P(Fractions* polinom, int degPol, int k, int& degPolOutput);
