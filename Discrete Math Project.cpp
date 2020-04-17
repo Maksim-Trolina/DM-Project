@@ -1,128 +1,71 @@
-﻿
-#include <iostream>
+﻿#include <iostream>
 #include "Modules.h"
 
 using namespace std;
 
 int main()
 {
-	/*int* a = new int[3];
-	int* b = new int[2];
-
-	a[0] = 2;
-	a[1] = 1;
-	a[2] = 0;
-
-	b[0] = 6;
-	b[1] = 0;
-
-
-	int len1 = 0;
-	int len2 = 0;
-
-	Number num;
-	num.lenNumerator = 0;
-	num.lenDenominator = 0;
-	num.sign = 0;
-	num.numerator = new int[3];
-	num.denominator = new int[2];
-
-	RED_Q_Q(3, 2, num.lenNumerator, num.lenDenominator, a, b, num.numerator, num.denominator);
-
+	int degPol = 2;
+	Fractions* coefs = new Fractions[degPol + 1];
 	
-	
-	cout << num.lenNumerator << endl;
-	for (int i = 0; i < num.lenNumerator; i++) {
-		cout << num.numerator[i];
-	}
-	cout << endl;
-	cout << num.lenDenominator << endl;
-	for (int i = 0; i < num.lenDenominator; i++) {
-		cout << num.denominator[i];
-	}*/
-	
+	coefs[0].lenNumerator = 1;
+	coefs[1].lenNumerator = 1;
+	coefs[2].lenNumerator = 1;
 
-	/*int NUMarr1[] = { 3,0,1 };
-	int DENarr1[] = { 1 };
+	coefs[0].lenDenominator = 1;
+	coefs[1].lenDenominator = 1;
+	coefs[2].lenDenominator = 1;
 
-	int NUMarr2[] = { 3,0,2 };
-	int DENarr2[] = { 1 };
+	coefs[0].sign = 0;
+	coefs[1].sign = 0;
+	coefs[2].sign = 0;
 
-	int* NUManswer = new int [3];
-	int* DENanswer = new int [1];
+	coefs[0].numerator = new int[coefs[0].lenNumerator];
+	coefs[1].numerator = new int[coefs[1].lenNumerator];
+	coefs[2].numerator = new int[coefs[2].lenNumerator];
 
-	int sign1 = 0;
-	int sign2 = 1;
+	coefs[0].denominator = new int[coefs[0].lenDenominator];
+	coefs[1].denominator = new int[coefs[1].lenDenominator];
+	coefs[2].denominator = new int[coefs[2].lenDenominator];
 
-	int NUMoutput = 0;
-	int DENoutput = 0;
-	int SignOutput = 0;
+	coefs[0].numerator[0] = 9;
+	coefs[1].numerator[0] = 3;
+	coefs[2].numerator[0] = 7;
 
-	int NUMlen1 = 3;
-	int DENlen1 = 1;
-	int NUMlen2 = 3;
-	int DENlen2 = 1;
+	coefs[0].denominator[0] = 4;
+	coefs[1].denominator[0] = 2;
+	coefs[2].denominator[0] = 1;
 
-	ADD_QQ_Q(NUMlen1, DENlen1, NUMlen2, DENlen2, sign1, sign2, SignOutput, NUMoutput, DENoutput, NUMarr1, DENarr1, NUMarr2, DENarr2, &NUManswer, &DENanswer);
+	/*Fractions* resPol = MUL_PQ_P(coefs, coefs[2], degPol);
 
-
-	for (int i = 0; i < NUMoutput; i++) {
-		cout << NUManswer[i];
-	}
-
-	cout << endl;
-
-
-	for (int i = 0; i < DENoutput; i++) {
-		cout << DENanswer[i];
+	for (int i = 0; i < degPol + 1; ++i) {
+		for (int j = 0; j < resPol[i].lenNumerator; ++j) {
+			cout << resPol[i].numerator[j];
+		}
+		cout << "\n";
 	}*/
 
+	int degDerPol;
+	Fractions* derPol = DER_P_P(coefs, degPol, degDerPol);
 
-	Fractions frac1, frac2, fracRes;
-
-	frac1.lenNumerator = 2;
-	frac2.lenNumerator = 2;
-	frac1.lenDenominator = 3;
-	frac2.lenDenominator = 3;
-
-	frac1.sign = 1;
-	frac2.sign = 1;
-
-	frac1.numerator = new int[frac1.lenNumerator];
-	frac2.numerator = new int[frac2.lenNumerator];
-	frac1.denominator = new int[frac1.lenDenominator];
-	frac2.denominator = new int[frac1.lenDenominator];
-
-	frac1.numerator[0] = 1;
-	frac1.numerator[1] = 2;
-
-	frac2.numerator[0] = 9;
-	frac2.numerator[1] = 9;
-
-	frac1.denominator[0] = 9;
-	frac1.denominator[1] = 9;
-	frac1.denominator[2] = 8;
-
-	frac2.denominator[0] = 9;
-	frac2.denominator[1] = 9;
-	frac2.denominator[2] = 9;
-
-	fracRes = DIV_QQ_Q(frac1, frac2);
-
-	for (int i = 0; i < fracRes.lenNumerator; ++i) {
-		cout << fracRes.numerator[i];
+	for (int i = 0; i < degDerPol + 1; ++i) {
+		for (int j = 0; j < derPol[i].lenNumerator; ++j) {
+			cout << derPol[i].numerator[j];
+		}
+		cout << " ";
 	}
 	cout << "\n";
-
-	for (int i = 0; i < fracRes.lenDenominator; ++i) {
-		cout << fracRes.denominator[i];
+	for (int i = 0; i < degDerPol + 1; ++i) {
+		for (int j = 0; j < derPol[i].lenDenominator; ++j) {
+			cout << derPol[i].denominator[j];
+		}
+		cout << " ";
 	}
 
+	/*Fractions res = MUL_QQ_Q(coefs[0], coefs[1]);
+
+	for (int i = 0; i < res.lenNumerator; ++i) {
+		cout << res.numerator[i];
+	}*/
 }
     
-
-
-	
-
-
-

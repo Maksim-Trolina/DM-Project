@@ -152,6 +152,7 @@
     <ClCompile Include="ADD_QQ_Q.cpp" />
     <ClCompile Include="ADD_ZZ_Z.cpp" />
     <ClCompile Include="COM_NN_D.cpp" />
+    <ClCompile Include="DER_P_Pcpp.cpp" />
     <ClCompile Include="Discrete Math Project.cpp" />
     <ClCompile Include="DIV_NN_Dk.cpp" />
     <ClCompile Include="DIV_NN_N.cpp" />
@@ -164,6 +165,7 @@
     <ClCompile Include="MUL_ND_N.cpp" />
     <ClCompile Include="MUL_Nk_N.cpp" />
     <ClCompile Include="MUL_NN_N.cpp" />
+    <ClCompile Include="MUL_PQ_P.cpp" />
     <ClCompile Include="MUL_QQ_Q.cpp" />
     <ClCompile Include="MUL_ZZ_Z.cpp" />
     <ClCompile Include="NZER_N_B.cpp" />
