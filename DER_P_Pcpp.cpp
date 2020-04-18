@@ -4,7 +4,7 @@ Fractions* DER_P_P(Fractions* polinom, int degPolinom, int& degPolinomOutput) {
 	
 	degPolinomOutput = degPolinom - 1;
 
-	Fractions* newNumber = new Fractions[degPolinomOutput + 1];
+	Fractions* newNumber = new Fractions[degPolinomOutput];
 	Fractions fracDegMonom;
 
 	for (int i = 0; i < degPolinom; ++i) {
