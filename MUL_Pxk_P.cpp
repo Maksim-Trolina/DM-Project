@@ -2,13 +2,13 @@
 
 Fractions* MUL_Pxk_P(Fractions* polinom, int degPol, int k, int& degPolOutput) {
 	degPolOutput = degPol + k;
-	Fractions* newNumber = new Fractions[degPolOutput + 1];
+	Fractions* newNumber = new Fractions[degPolOutput];
 
-	for (int i = 0; i < degPol + 1; ++i) {
+	for (int i = 0; i < degPol; ++i) {
 		newNumber[i] = polinom[i];
 	}
 
-	for (int i = degPol + 1; i < degPolOutput + 1; ++i) {
+	for (int i = degPol; i < degPolOutput; ++i) {
 		newNumber[i].lenNumerator = 1;
 		newNumber[i].lenDenominator = 1;
 		newNumber[i].sign = 0;
