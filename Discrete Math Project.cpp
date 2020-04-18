@@ -6,28 +6,43 @@ using namespace std;
 
 int main()
 {
-	Fractions num1;
-	Fractions num2;
+	Fractions* nums = new Fractions[2];
 
-	cin >> num1.sign >> num2.sign;
-	cin >> num1.lenNumerator >> num2.lenNumerator;
-
-	num1.numerator = new int[num1.lenNumerator];
-	num2.numerator = new int[num2.lenNumerator];
-
-	for (int i = 0; i < num1.lenNumerator; i++) {
-		cin >> num1.numerator[i];
+	for (int i = 0; i < 2; i++) {
+		cin >> nums[i].sign;
+		cin >> nums[i].lenNumerator;
+		for (int j = 0; j < nums[j].lenNumerator; j++) {
+			cin >> nums[i].numerator[j];
+		}
+		cin >> nums[i].lenDenominator;
+		for (int j = 0; j < nums[i].lenDenominator; j++) {
+			cin >> nums[i].denominator[j];
+		}
 	}
-	for (int i = 0; i < num2.lenNumerator; i++) {
-		cin >> num2.numerator[i];
+	Fractions numb;
+	cin >> numb.sign;
+	cin >> numb.lenNumerator;
+	for (int i = 0; i < numb.lenNumerator; i++) {
+		cin >> numb.numerator[i];
 	}
-	Fractions res;
-	//res.numerator = new int[max(num1.lenNumerator, num2.lenNumerator)];
-	res = SUB_ZZ_Z(num1,num2);
-	cout << res.sign << endl;
+	cin >> numb.lenDenominator;
+	for (int i = 0; i < numb.lenDenominator; i++) {
+		cin >> numb.denominator[i];
+	}
 
-	for (int i = 0; i < res.lenNumerator; i++) {
-		cout << res.numerator[i];
+	 nums = MUL_PQ_P(nums, numb, 2);
+
+
+	for (int i = 0; i < 2; i++) {
+		cout<< nums[i].sign<<endl;
+		cout << nums[i].lenNumerator << endl;
+		for (int j = 0; j < nums[j].lenNumerator; j++) {
+			cout<<nums[i].numerator[j];
+		}
+		cout << nums[i].lenDenominator << endl;
+		for (int j = 0; j < nums[i].lenDenominator; j++) {
+			cout<< nums[i].denominator[j];
+		}
 	}
 	
 
