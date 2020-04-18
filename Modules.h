@@ -78,7 +78,7 @@ void RED_Q_Q(int lenNumerator, int lenDenominator, int& lenOutputNumerator, int&
 	 int numerator[], int denominator[], int numeratorOutput[], int denominatorOutput[]);
 
 //Substract two integers
-int* SUB_ZZ_Z(int lenNumber1, int lenNumber2, int& lenOutput, int sign1, int sign2, int& signOutput, int number1[], int number2[]);
+Fractions SUB_ZZ_Z(Fractions number1,Fractions number2);
 
 //Least common multiple
 int* LCM_NN_N(int lenNumber1, int lenNumber2, int& lenOutput, int number1[], int number2[]);
