@@ -103,3 +103,9 @@ Fractions* MUL_Pxk_P(Fractions* polinom, int degPol, int k, int& degPolOutput);
 
 //Remainder of dividing a larger integer by a smaller
 Fractions MOD_ZZ_Z(Fractions num1, Fractions num2);
+
+//Polynomial addition
+Fractions* ADD_PP_P(Fractions nums1[], Fractions nums2[], int lenNums1, int lenNums2, int& lenOutput);
+
+
+Fractions* PolynomialFilling(int lenPolinom);

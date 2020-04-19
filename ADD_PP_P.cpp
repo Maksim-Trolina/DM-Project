@@ -1,48 +1,39 @@
 #include "Modules.h"
+#include <algorithm>
 
+using namespace std;
 
-Number* ADD_PP_P(Number numbers1[], Number numbers2[],int lenNums1,int lenNums2,int& lenOutput) {
+Fractions* ADD_PP_P(Fractions nums1[], Fractions nums2[],int lenNums1,int lenNums2,int& lenOutput) {
 	
-	int minLen;
-	int maxLen;
-	Number* newNums;
-	if (lenNums1 < lenNums2) {
-
-		minLen = lenNums1;
-		newNums = new Number[lenNums2];
-		maxLen = lenNums2;
-	}
-	else {
-		minLen = lenNums2;
-		newNums = new Number[lenNums1];
-		maxLen = lenNums1;
-	}
-
-	for (int i = 0; i < minLen; i++) 
-	{
-		int indexNew = maxLen - i - 1;
-		int index1 = lenNums1 - i - 1;
-		int index2 = lenNums2 - i - 1;
-		ADD_QQ_Q(numbers1[index1].lenNumerator, numbers1[index1].lenDenominator, numbers2[index2].lenNumerator, numbers2[index2].lenDenominator, numbers1[index1].sign,
-
-			numbers2[index2].sign, newNums[indexNew].sign, newNums[indexNew].lenNumerator, newNums[indexNew].lenDenominator, numbers1[index1].numerator, numbers1[index1].denominator,
-
-			numbers2[index2].numerator, numbers2[index2].denominator, &newNums[indexNew].numerator, &newNums[indexNew].denominator);
-	}
-	if (maxLen == lenNums1) {
-
-		for (int i = minLen; i < maxLen; i++) {
-			newNums[i] = numbers1[i];
-		}
-	}
-	else {
-		for (int i = minLen; i < maxLen; i++) {
-			newNums[i] = numbers2[i];
-		}
-	}
-
-	lenOutput = maxLen;
 	
+	if (lenNums1 >= lenNums2) {
+
+		lenOutput = lenNums1;
+		return AddMoreWithLess(nums1, nums2, lenNums1, lenNums2);
+	}
+	
+	lenOutput = lenNums2;
+	
+	return AddMoreWithLess(nums2, nums1, lenNums2, lenNums1);
+	
+
+}
+
+Fractions* AddMoreWithLess(Fractions nums1[], Fractions nums2[], int lenNums1, int lenNums2) {
+
+	Fractions* newNums = new Fractions[lenNums1];
+
+
+	for (int i = lenNums1 - 1; i + lenNums2 - lenNums1 >= 0; i--) {
+		
+		int j = i + lenNums2 - lenNums1;
+
+		ADD_QQ_Q(nums1[i].lenNumerator, nums1[i].lenDenominator, nums2[i-j].lenNumerator, nums2[i-j].lenDenominator, nums1[i].sign, nums2[i-j].sign, newNums[i].sign, newNums[i].lenNumerator, newNums[i].lenDenominator,
+			nums1[i].numerator, nums1[i].denominator, nums2[i-j].numerator, nums2[i-j].denominator, &newNums[i].numerator, &newNums[i].denominator);
+	}
+	for (int i = lenNums1 - lenNums2 - 1; i >= 0; i--) {
+		newNums[i] = nums1[i];
+	}
+
 	return newNums;
-
 }

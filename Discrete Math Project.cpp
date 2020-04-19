@@ -6,26 +6,21 @@ using namespace std;
 
 int main()
 {
-    Fractions num1, num2, res;
-    
-    cin >> num1.lenNumerator >> num2.lenNumerator;
+    Fractions* nums1 = new Fractions[2];
+    Fractions* nums2 = new Fractions[1];
 
-    num1.numerator = new int[num1.lenNumerator];
-    num2.numerator = new int[num2.lenNumerator];
+    for (int i = 0; i < 2; i++) {
+        cin >> nums1[i].sign;
+        cin >> nums1[i].lenNumerator;
 
-    for (int i = 0; i < num1.lenNumerator; i++) {
-        cin >> num1.numerator[i];
-    }
+        for (int j = 0; j < nums1[i].lenNumerator; j++) {
+            cin >> nums1[i].numerator[j];
+        }
 
-    for (int i = 0; i < num2.lenNumerator; i++) {
-        cin >> num2.numerator[i];
-    }
-
-    res = MOD_ZZ_Z(num1, num2);
-
-    cout << endl;
-    for (int i = 0; i < res.lenNumerator; i++) {
-        cout << res.numerator[i];
+        cin >> nums1[i].lenDenominator;
+        for (int j = 0; j < nums1[i].lenDenominator; j++) {
+            cin >> nums1[i].denominator[j];
+        }
     }
 
 }
