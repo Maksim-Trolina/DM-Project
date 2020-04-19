@@ -109,3 +109,6 @@ Fractions* ADD_PP_P(Fractions nums1[], Fractions nums2[], int lenNums1, int lenN
 
 //Fills the polynomial with rational coefficients
 Fractions* PolynomialFilling(int lenPolinom);
+
+//Prints polynomial
+void PolynomialReading(Fractions nums[], int lenNums);
