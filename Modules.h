@@ -100,3 +100,6 @@ Fractions* DER_P_P(Fractions* polinom, int degPoliom, int& degPolinomOutput);
 
 //Multiplying a polynomial by x^k
 Fractions* MUL_Pxk_P(Fractions* polinom, int degPol, int k, int& degPolOutput);
+
+//Remainder of dividing a larger integer by a smaller
+Fractions MOD_ZZ_Z(Fractions num1, Fractions num2);

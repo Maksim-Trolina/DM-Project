@@ -6,45 +6,27 @@ using namespace std;
 
 int main()
 {
-	Fractions* nums = new Fractions[2];
+    Fractions num1, num2, res;
+    
+    cin >> num1.lenNumerator >> num2.lenNumerator;
 
-	for (int i = 0; i < 2; i++) {
-		cin >> nums[i].sign;
-		cin >> nums[i].lenNumerator;
-		for (int j = 0; j < nums[j].lenNumerator; j++) {
-			cin >> nums[i].numerator[j];
-		}
-		cin >> nums[i].lenDenominator;
-		for (int j = 0; j < nums[i].lenDenominator; j++) {
-			cin >> nums[i].denominator[j];
-		}
-	}
-	Fractions numb;
-	cin >> numb.sign;
-	cin >> numb.lenNumerator;
-	for (int i = 0; i < numb.lenNumerator; i++) {
-		cin >> numb.numerator[i];
-	}
-	cin >> numb.lenDenominator;
-	for (int i = 0; i < numb.lenDenominator; i++) {
-		cin >> numb.denominator[i];
-	}
+    num1.numerator = new int[num1.lenNumerator];
+    num2.numerator = new int[num2.lenNumerator];
 
-	 nums = MUL_PQ_P(nums, numb, 2);
+    for (int i = 0; i < num1.lenNumerator; i++) {
+        cin >> num1.numerator[i];
+    }
 
+    for (int i = 0; i < num2.lenNumerator; i++) {
+        cin >> num2.numerator[i];
+    }
 
-	for (int i = 0; i < 2; i++) {
-		cout<< nums[i].sign<<endl;
-		cout << nums[i].lenNumerator << endl;
-		for (int j = 0; j < nums[j].lenNumerator; j++) {
-			cout<<nums[i].numerator[j];
-		}
-		cout << nums[i].lenDenominator << endl;
-		for (int j = 0; j < nums[i].lenDenominator; j++) {
-			cout<< nums[i].denominator[j];
-		}
-	}
-	
+    res = MOD_ZZ_Z(num1, num2);
+
+    cout << endl;
+    for (int i = 0; i < res.lenNumerator; i++) {
+        cout << res.numerator[i];
+    }
 
 }
     

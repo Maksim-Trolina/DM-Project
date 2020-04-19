@@ -162,6 +162,7 @@
     <ClCompile Include="INT_Q_B.cpp" />
     <ClCompile Include="LCM_NN_N.cpp" />
     <ClCompile Include="MOD_NN_N.cpp" />
+    <ClCompile Include="MOD_ZZ_Z.cpp" />
     <ClCompile Include="MUL_ND_N.cpp" />
     <ClCompile Include="MUL_Nk_N.cpp" />
     <ClCompile Include="MUL_NN_N.cpp" />
