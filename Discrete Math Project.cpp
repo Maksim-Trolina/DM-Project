@@ -6,22 +6,13 @@ using namespace std;
 
 int main()
 {
-    Fractions* nums1 = new Fractions[2];
-    Fractions* nums2 = new Fractions[1];
+    Fractions* nums1 = PolynomialFilling(2);
+    Fractions* nums2 = PolynomialFilling(2);
+    int len;
+    Fractions* newNums = ADD_PP_P(nums1, nums2, 2, 2, len);
 
-    for (int i = 0; i < 2; i++) {
-        cin >> nums1[i].sign;
-        cin >> nums1[i].lenNumerator;
-
-        for (int j = 0; j < nums1[i].lenNumerator; j++) {
-            cin >> nums1[i].numerator[j];
-        }
-
-        cin >> nums1[i].lenDenominator;
-        for (int j = 0; j < nums1[i].lenDenominator; j++) {
-            cin >> nums1[i].denominator[j];
-        }
-    }
+    PolynomialReading(newNums, len);
+    
 
 }
     

@@ -84,7 +84,7 @@ Fractions SUB_ZZ_Z(Fractions number1,Fractions number2);
 int* LCM_NN_N(int lenNumber1, int lenNumber2, int& lenOutput, int number1[], int number2[]);
 
 //Sum of fractions
-void ADD_QQ_Q(int NUMlennumber1, int DENlennumber1, int NUMlennumber2, int DENlennumber2, int sign1, int sign2, int& signOutputanswer, int& NUMlenOutput, int& DENlenOutput, int NUMnumber1[], int DENnumber1[], int NUMnumber2[], int DENnumber2[], int** NUMnewnumber, int** DENnewnumber);
+Fractions ADD_QQ_Q(Fractions num1, Fractions num2);
 
 //Multiplication of rational fractions
 Fractions MUL_QQ_Q(Fractions frac1, Fractions frac2);

@@ -1,57 +1,23 @@
 #include "Modules.h"
 
-// NUM - числитель
-// DEN - знаменатель
 
-void ADD_QQ_Q(int NUMlennumber1, int DENlennumber1, int NUMlennumber2, int DENlennumber2, int sign1, int sign2, int& signOutputanswer, int& NUMlenOutput, int& DENlenOutput,
-	          int NUMnumber1[], int DENnumber1[], int NUMnumber2[], int DENnumber2[], int** NUManswer, int** DENanswer) 
+Fractions ADD_QQ_Q(Fractions num1,Fractions num2) 
 {
-	if (!NZER_N_B(DENnumber1) || !NZER_N_B(DENnumber2)) {
+	Fractions result;
+	int sign;
+	int len1;
+	int len2;
 
-		return;
-	}
-
-	int* localNUMnumber1 = new int[NUMlennumber1];
-	int* localDENnumber1 = new int[DENlennumber1];
-	int* localNUMnumber2 = new int[NUMlennumber1];
-	int* localDENnumber2 = new int[DENlennumber2];
+	result.denominator = MUL_ZZ_Z(num1.lenDenominator, num2.lenDenominator, result.lenDenominator, 0, 0,sign, num1.denominator, num2.denominator);
 
 
-	for (int i = 0; i < NUMlennumber1; i++) {
+	int* numerator1 = MUL_ZZ_Z(num1.lenNumerator, num2.lenDenominator, len1, 0, 0, sign, num1.numerator, num2.denominator);
 
-		localNUMnumber1[i] = NUMnumber1[i];
-	}
-	for (int i = 0; i < DENlennumber1; i++) {
+	int* numerator2 = MUL_ZZ_Z(num1.lenDenominator, num2.lenNumerator, len2, 0, 0, sign, num1.denominator, num2.numerator);
 
-		localDENnumber1[i] = DENnumber1[i];
-	}
-	for (int i = 0; i < NUMlennumber2; i++) {
+	result.numerator = ADD_ZZ_Z(len1, len2, result.lenNumerator, num1.sign, num2.sign, result.sign, numerator1, numerator2);
 
-		localNUMnumber2[i] = NUMnumber2[i];
-	}
-	for (int i = 0; i < DENlennumber2; i++) {
+		return result;
 
-		localDENnumber2[i] = DENnumber2[i];
-	}
-
-	*DENanswer = LCM_NN_N(DENlennumber1, DENlennumber2, DENlenOutput, localDENnumber1, localDENnumber2);
-
-	int lenOutputkef1 = 0;
-	int lenOutputkef2 = 0;
-
-	int* keffornumber1 = DIV_NN_N(DENlenOutput, DENlennumber1, lenOutputkef1, *DENanswer, localDENnumber1);
-	int* keffornumber2 = DIV_NN_N(DENlenOutput, DENlennumber2, lenOutputkef2, *DENanswer, localDENnumber2);
-
-	int ternlenOutput1 = 0;
-	int ternlenOutput2 = 0;
-
-	int signOutputtern1 = 0;
-	int signOutputtern2 = 0;
-
-	int* thirstterm = MUL_ZZ_Z(NUMlennumber1, lenOutputkef1, ternlenOutput1, sign1, 0, signOutputtern1, localNUMnumber1, keffornumber1);
-	int* secondtern = MUL_ZZ_Z(NUMlennumber2, lenOutputkef2, ternlenOutput2, sign2, 0, signOutputtern2, localNUMnumber2, keffornumber2);
-
-
-	*NUManswer = ADD_ZZ_Z(ternlenOutput1, ternlenOutput2, NUMlenOutput, sign1, sign2, signOutputanswer, thirstterm, secondtern);
 
 }
