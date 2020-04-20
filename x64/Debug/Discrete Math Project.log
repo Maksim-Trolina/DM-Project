@@ -1,37 +1,43 @@
-﻿  ADD_NN_N.cpp
+﻿  ADD_1N_N.cpp
+  ADD_NN_N.cpp
   ADD_PP_P.cpp
   ADD_QQ_Q.cpp
   ADD_ZZ_Z.cpp
   Again.cpp
+  COM_NN_D.cpp
   DER_P_Pcpp.cpp
+  Discrete Math Project.cpp
   DIV_NN_Dk.cpp
   DIV_NN_N.cpp
   DIV_QQ_Q.cpp
   DIV_ZZ_Z.cpp
-  Discrete Math Project.cpp
-  GCF_NN_N.cpp
-  INT_Q_B.cpp
+  FAC_P_Q.cpp
   IntegerNumberMenu.cpp
+  NaturalNumbersMenu.cpp
+  PolynomalMenu.cpp
+  RationalNumberMenu.cpp
+  StartMenu.cpp
+  GCF_NN_N.cpp
+  Создание кода...
+  Компиляция...
+  INT_Q_B.cpp
   LCM_NN_N.cpp
   MOD_NN_N.cpp
   MOD_ZZ_Z.cpp
+  MUL_ND_N.cpp
+  MUL_Nk_N.cpp
   MUL_NN_N.cpp
   MUL_PQ_P.cpp
   MUL_Pxk_P.cpp
-  Создание кода...
-  Компиляция...
   MUL_QQ_Q.cpp
-  MUL_ZM_Z.cpp
   MUL_ZZ_Z.cpp
-  NaturalNumbersMenu.cpp
-  PolynomalMenu.cpp
+  NZER_N_B.cpp
+  MUL_ZM_Z.cpp
   PolynomialFilling.cpp
   PolynomialReading.cpp
   RED_Q_Q.cpp
-  RationalNumberMenu.cpp
   SUB_NDN_N.cpp
   SUB_NN_N.cpp
   SUB_ZZ_Z.cpp
-  StartMenu.cpp
   Создание кода...
-  Discrete Math Project.vcxproj -> C:\Users\Trolina\Desktop\DM-Project\x64\Debug\Discrete Math Project.exe
+  Discrete Math Project.vcxproj -> C:\Users\DONBASS\Desktop\DM-Project2\x64\Debug\Discrete Math Project.exe

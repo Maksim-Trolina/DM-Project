@@ -110,6 +110,9 @@ Fractions* ADD_PP_P(Fractions nums1[], Fractions nums2[], int lenNums1, int lenN
 //Fills the polynomial with rational coefficients
 Fractions* PolynomialFilling(int lenPolinom);
 
+//The imposition of polynomial LCM of denominators of coefficients and the GCD of the numerators
+Fractions* FAC_P_Q(Fractions* polinom, int lenPolinom);
+
 //Prints polynomial
 void PolynomialReading(Fractions nums[], int lenNums);
 
