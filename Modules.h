@@ -112,3 +112,21 @@ Fractions* PolynomialFilling(int lenPolinom);
 
 //Prints polynomial
 void PolynomialReading(Fractions nums[], int lenNums);
+
+//Draws a start menu
+void StartMenu();
+
+//Draws menu for natural numbers
+void NaturalNumbersMenu();
+
+//Draws menu for integer numbers
+void IntegerNumberMenu();
+
+//Redraws the current menu
+void Again(void (function)());
+
+//Draws menu for rational numbers
+void RationalNumberMenu();
+
+//Draws menu for polynomals
+void PolynomalMenu();
