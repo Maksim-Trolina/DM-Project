@@ -1,17 +1,7 @@
-﻿  IntegerNumberMenu.cpp
-C:\Users\Trolina\Desktop\DM-Project\IntegerNumberMenu.cpp(55,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\Trolina\Desktop\DM-Project\IntegerNumberMenu.cpp(61,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\Trolina\Desktop\DM-Project\IntegerNumberMenu.cpp(93,69): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\Trolina\Desktop\DM-Project\IntegerNumberMenu.cpp(99,69): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\Trolina\Desktop\DM-Project\IntegerNumberMenu.cpp(131,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\Trolina\Desktop\DM-Project\IntegerNumberMenu.cpp(137,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\Trolina\Desktop\DM-Project\IntegerNumberMenu.cpp(166,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\Trolina\Desktop\DM-Project\IntegerNumberMenu.cpp(172,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\Trolina\Desktop\DM-Project\IntegerNumberMenu.cpp(205,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\Trolina\Desktop\DM-Project\IntegerNumberMenu.cpp(212,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+﻿  RED_Q_Q.cpp
   Создание кода
-  1 of 160 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
+  2 of 166 functions ( 1.2%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    2 functions had inline decision re-evaluated but remain unchanged
+    3 functions had inline decision re-evaluated but remain unchanged
   Создание кода завершено
   Discrete Math Project.vcxproj -> C:\Users\Trolina\Desktop\DM-Project\x64\Release\Discrete Math Project.exe

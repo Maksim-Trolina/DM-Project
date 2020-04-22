@@ -173,6 +173,7 @@ void IntegerNumberMenu() {
 
 		if (num2[0] == 0) {
 			Again(IntegerNumberMenu);
+			return;
 		}
 
 		result = DIV_ZZ_Z((int)number1.length() - flag1, (int)number2.length() - flag2, lenRes, sign1, sign2, signRes, num1, num2);
@@ -213,6 +214,7 @@ void IntegerNumberMenu() {
 
 		if (num2[0] == 0) {
 			Again(IntegerNumberMenu);
+			return;
 		}
 
 		n2.numerator = num2;

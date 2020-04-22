@@ -6,12 +6,36 @@ using namespace std;
 
 int main()
 {
-    /*Fractions* nums1 = PolynomialFilling(2);
-    Fractions* nums2 = PolynomialFilling(2);
-    int len;
-    Fractions* newNums = ADD_PP_P(nums1, nums2, 2, 2, len);
+   /* Fractions n1;
+    n1.sign = 0;
+    n1.lenNumerator = 1;
+    n1.lenDenominator = 1;
+    n1.numerator = new int[1];
+    n1.numerator[0] = 2;
+    n1.denominator = new int[1];
+    n1.denominator[0] = 3;
 
-    PolynomialReading(newNums, len);*/
+    Fractions n2;
+    n2.sign = 0;
+    n2.lenNumerator = 1;
+    n2.numerator = new int[1];
+    n2.numerator[0] = 5;
+    n2.lenDenominator = 1;
+    n2.denominator = new int[1];
+    n2.denominator[0] = 7;
+
+    Fractions c = ADD_QQ_Q(n1, n2);
+
+    cout << c.sign << endl;
+
+    for (int i = 0; i < c.lenNumerator; i++) {
+        cout << c.numerator[i];
+    }
+    cout << endl;
+
+    for (int i = 0; i < c.lenDenominator; i++) {
+        cout << c.denominator[i];
+    }*/
     setlocale(LC_ALL, "Russian");
    StartMenu();
 

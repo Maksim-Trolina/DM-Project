@@ -12,7 +12,6 @@ bool CheckForRational(string number, int& sign) {
 	int start = 0;
 
 	if (number.length() < 5) {
-
 		return false;
 	}
 
@@ -22,7 +21,6 @@ bool CheckForRational(string number, int& sign) {
 	}
 
 	if (number[number.length() - 1] != ')') {
-
 		return false;
 	}
 	start++;
@@ -32,29 +30,26 @@ bool CheckForRational(string number, int& sign) {
 	}
 
 	if (!CheckForInteger(numerator,sign)) {
-
 		return false;
 	}
 
 	if (start == number.length()) {
-
 		return false;
 	}
 
 	if (number[start] != '/') {
-
 		return false;
 	}
 
 	start++;
 
-	for (start; start < number.length(); start++) {
+
+	for (start; start < (int)number.length()-1; start++) {
 
 		denominator += number[start];
 	}
 	int a;
 	if (!CheckForNatural(denominator,a)) {
-
 		return false;
 	}
 

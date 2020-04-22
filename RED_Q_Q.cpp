@@ -4,6 +4,17 @@
 void RED_Q_Q(int lenNumerator, int lenDenominator, int& lenOutputNumerator, int& lenOutputDenominator,
 	int numerator[], int denominator[], int numeratorOutput[], int denominatorOutput[])
 {
+	if (numerator[0] == 0) {
+		for (int i = 0; i < lenNumerator; i++) {
+			numeratorOutput[i] = numerator[i];
+		}
+		for (int i = 0; i < lenDenominator; i++) {
+			denominatorOutput[i] = denominator[i];
+		}
+		lenOutputNumerator = lenNumerator;
+		lenOutputDenominator = lenDenominator;
+		return;
+	}
 	int* numeratorCopy = new int[lenNumerator];
 	int* denominatorCopy = new int[lenDenominator];
 
@@ -15,6 +26,7 @@ void RED_Q_Q(int lenNumerator, int lenDenominator, int& lenOutputNumerator, int&
 	for (int i = 0; i < lenDenominator; i++) {
 		denominatorCopy[i] = denominator[i];
 	}
+
 
 	while (true) {
 
