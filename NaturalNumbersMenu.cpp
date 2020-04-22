@@ -16,16 +16,45 @@ void NaturalNumbersMenu() {
 	cout << "Чтобы выбрать интересующий вас пункт,необходимо ввести его номер" << endl;
 
 	string menuItem;
+	string number1;
+	string number2;
+	int* num1;
+	int* num2;
+	int* result;
+	int lenRes = 0;
+	int sign1;
+	int sign2;
 	cin >> menuItem;
 
 	if (menuItem.length() != 1) {
 		Again(NaturalNumbersMenu);
 		return;
 	}
-
 	switch (menuItem[0])
 	{
 	case '1':
+		system("cls");
+		number1 = RequestNumber(CheckForNatural, sign1);
+		if (number1 == "404%%aa^9*") {
+			Again(NaturalNumbersMenu);
+			return;
+		}
+		number2 = RequestNumber(CheckForNatural, sign2);
+		if (number2 == "404%%aa^9*") {
+			Again(NaturalNumbersMenu);
+			return;
+		}
+
+		num1 = StringToNumber(number1, 0, number1.length() - 1);
+		num2 = StringToNumber(number2, 0, number2.length() - 1);
+		result = ADD_NN_N(number1.length(), number2.length(), lenRes, num1, num2);
+
+		cout << "Результат: ";
+		for (int i = 0; i < lenRes; i++) {
+			cout << result[i];
+		}
+		cout << endl;
+		Again(NaturalNumbersMenu);
 		return;
 	case '2':
 		return;
@@ -44,6 +73,7 @@ void NaturalNumbersMenu() {
 		StartMenu();
 		return;
 	default:
+		cout << "Такого пункта нет в меню" << endl;
 		Again(NaturalNumbersMenu);
 		return;
 	}

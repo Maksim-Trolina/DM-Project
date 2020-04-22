@@ -17,6 +17,7 @@ void IntegerNumberMenu() {
 	cin >> menuItem;
 
 	if (menuItem.length() != 1) {
+		cout << "Такого пункта нет в меню" << endl;
 		Again(IntegerNumberMenu);
 		return;
 	}
@@ -38,6 +39,7 @@ void IntegerNumberMenu() {
 		StartMenu();
 		return;
 	default:
+		cout << "Такого пункта нет в меню" << endl;
 		Again(IntegerNumberMenu);
 		return;
 	}

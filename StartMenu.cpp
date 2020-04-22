@@ -16,6 +16,7 @@ void StartMenu() {
 	cin >> menuItem;
 
 	if (menuItem.length() != 1) {
+		cout << "Такого пункта нет в меню" << endl;
 		Again(StartMenu);
 		return;
 	}
@@ -40,6 +41,7 @@ void StartMenu() {
 	case '5':
 		return;
 	default:
+		cout << "Такого пункта нет в меню" << endl;
 		Again(StartMenu);
 		return;
 	}

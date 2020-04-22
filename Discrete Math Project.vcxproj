@@ -153,6 +153,9 @@
     <ClCompile Include="ADD_QQ_Q.cpp" />
     <ClCompile Include="ADD_ZZ_Z.cpp" />
     <ClCompile Include="Again.cpp" />
+    <ClCompile Include="CheckForInteger.cpp" />
+    <ClCompile Include="CheckForNatural.cpp" />
+    <ClCompile Include="CheckForRational.cpp" />
     <ClCompile Include="COM_NN_D.cpp" />
     <ClCompile Include="DER_P_Pcpp.cpp" />
     <ClCompile Include="Discrete Math Project.cpp" />
@@ -183,6 +186,7 @@
     <ClCompile Include="PolynomialFilling.cpp" />
     <ClCompile Include="PolynomialReading.cpp" />
     <ClCompile Include="RED_Q_Q.cpp" />
+    <ClCompile Include="StringToNumber.cpp" />
     <ClCompile Include="SUB_NDN_N.cpp" />
     <ClCompile Include="SUB_NN_N.cpp" />
     <ClCompile Include="SUB_ZZ_Z.cpp" />

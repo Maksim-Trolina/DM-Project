@@ -16,6 +16,7 @@ void RationalNumberMenu() {
 	cin >> menuItem;
 
 	if (menuItem.length() != 1) {
+		cout << "Такого пункта нет в меню" << endl;
 		Again(RationalNumberMenu);
 		return;
 	}
@@ -37,6 +38,7 @@ void RationalNumberMenu() {
 		StartMenu();
 		return;
 	default:
+		cout << "Такого пункта нет в меню" << endl;
 		Again(RationalNumberMenu);
 		return;
 	}

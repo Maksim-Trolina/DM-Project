@@ -1,3 +1,7 @@
+#include <iostream>
+
+using namespace std;
+
 //fractions number structure
 struct Fractions
 {
@@ -133,3 +137,18 @@ void RationalNumberMenu();
 
 //Draws menu for polynomals
 void PolynomalMenu();
+
+//Checks the number for naturalness
+bool CheckForNatural(string number,int& sign);
+
+//Checks a number for an integer
+bool CheckForInteger(string number, int& sign);
+
+//Checks the number for rationality
+bool CheckForRational(string number, int& sign);
+
+//Returns a number
+string RequestNumber(bool (check)(string, int&), int& sign);
+
+//Converts a string to a number
+int* StringToNumber(string number, int start, int end);
