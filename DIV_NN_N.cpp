@@ -6,6 +6,12 @@ using namespace std;
 
 int* DIV_NN_N(int lenNumber1, int lenNumber2, int& lenOutput, int number1[], int number2[]) {
 
+	if (COM_NN_D(lenNumber1, lenNumber2, number1, number2) == 1) {
+		lenOutput = 1;
+		int* newNumber = new int[1];
+		newNumber[0] = 0;
+		return newNumber;
+	}
 	int* newNumber = new int[lenNumber1];
 	int* num = new int[lenNumber1];
 	int position = 0;

@@ -1,7 +1,13 @@
 #include "Modules.h"
 
 int* MOD_NN_N(int lenNumber1, int lenNumber2, int& lenOutput, int number1[], int number2[]) {
+
 	int flag = COM_NN_D(lenNumber1, lenNumber2, number1, number2);
+
+	if (flag == 1) {
+		lenOutput = lenNumber1;
+		return number1;
+	}
 	int lenDiv = 0;
 	int* div;
 	int lenIntegPart = 0;
