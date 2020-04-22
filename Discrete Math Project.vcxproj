@@ -165,6 +165,7 @@
     <ClCompile Include="DIV_ZZ_Z.cpp" />
     <ClCompile Include="FAC_P_Q.cpp" />
     <ClCompile Include="IntegerNumberMenu.cpp" />
+    <ClCompile Include="MUL_PP_P.cpp" />
     <ClCompile Include="NaturalNumbersMenu.cpp" />
     <ClCompile Include="PolynomalMenu.cpp" />
     <ClCompile Include="RationalNumberMenu.cpp" />

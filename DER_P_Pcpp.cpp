@@ -1,23 +1,23 @@
 #include "Modules.h"
 
-Fractions* DER_P_P(Fractions* polinom, int degPolinom, int& degPolinomOutput) {
+Fractions* DER_P_P(Fractions* polinom, int lenPolinom, int& lenPolinomOutput) {
 	
-	degPolinomOutput = degPolinom - 1;
+	lenPolinomOutput = lenPolinom - 1;
 
-	Fractions* newNumber = new Fractions[degPolinomOutput];
+	Fractions* newNumber = new Fractions[lenPolinomOutput];
 	Fractions fracDegMonom;
 
-	for (int i = 0; i < degPolinom; ++i) {
+	for (int i = 0; i < lenPolinom; ++i) {
 	
 		int lenNum = 0;
-		int t = degPolinom - i;
+		int t = lenPolinom - i - 1;
 
 		while (t > 0) {
 			lenNum++;
 			t /= 10;
 		}
 
-		t = degPolinom - i;
+		t = lenPolinom - i - 1;
 		int* num = new int[lenNum];
 
 		for (int j = 0; j < lenNum; ++j) {

@@ -97,13 +97,13 @@ Fractions MUL_QQ_Q(Fractions frac1, Fractions frac2);
 Fractions DIV_QQ_Q(Fractions frac1, Fractions frac2);
 
 //Multiplying a polynomial by a rational number
-Fractions* MUL_PQ_P(Fractions* polinom, Fractions coef, int degPolinom);
+Fractions* MUL_PQ_P(Fractions* polinom, Fractions coef, int lenPolinom);
 
 //Derivative of a polynomial
-Fractions* DER_P_P(Fractions* polinom, int degPoliom, int& degPolinomOutput);
+Fractions* DER_P_P(Fractions* polinom, int lenPoliom, int& lenPolinomOutput);
 
 //Multiplying a polynomial by x^k
-Fractions* MUL_Pxk_P(Fractions* polinom, int degPol, int k, int& degPolOutput);
+Fractions* MUL_Pxk_P(Fractions* polinom, int lenPol, int k, int& lenPolOutput);
 
 //Remainder of dividing a larger integer by a smaller
 Fractions MOD_ZZ_Z(Fractions num1, Fractions num2);
@@ -116,6 +116,9 @@ Fractions* PolynomialFilling(int lenPolinom);
 
 //The imposition of polynomial LCM of denominators of coefficients and the GCD of the numerators
 Fractions* FAC_P_Q(Fractions* polinom, int lenPolinom);
+
+//
+Fractions* MUL_PP_P(Fractions* pol1, Fractions* pol2, int lenPol1, int lenPol2, int& lenPolOutput);
 
 //Prints polynomial
 void PolynomialReading(Fractions nums[], int lenNums);
