@@ -189,12 +189,12 @@ void IntegerNumberMenu() {
 	case '5':
 		system("cls");
 		number1 = RequestNumber(CheckForInteger, sign1);
-		if (number1 == "404%%aa^9*" || sign1 == 1) {
+		if (number1 == "404%%aa^9*") {
 			Again(IntegerNumberMenu);
 			return;
 		}
 		number2 = RequestNumber(CheckForInteger, sign2);
-		if (number2 == "404%%aa^9*" || sign2 == 1) {
+		if (number2 == "404%%aa^9*") {
 			Again(IntegerNumberMenu);
 			return;
 		}
@@ -222,7 +222,7 @@ void IntegerNumberMenu() {
 		n2.sign = sign2;
 		res = MOD_ZZ_Z(n1,n2);
 		cout << "Результат: ";
-		if (res.sign == 1) {
+		if (res.sign == 1 || sign1 == 1) {
 			cout << "-";
 		}
 		for (int i = 0; i < res.lenNumerator; i++) {

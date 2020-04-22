@@ -13,7 +13,7 @@ int main()
 
     PolynomialReading(newNums, len);*/
     setlocale(LC_ALL, "Russian");
-    StartMenu();
+   StartMenu();
 
     /*int* a = new int[2];
     int* b = new int[2];
