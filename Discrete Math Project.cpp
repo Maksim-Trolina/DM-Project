@@ -13,7 +13,7 @@ int main()
     getline(cin, s);
 
     cout << s;*/
-
+   
 
     setlocale(LC_ALL, "Russian");
   StartMenu();

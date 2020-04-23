@@ -39,7 +39,7 @@ void StartMenu() {
 		PolynomalMenu();
 		return;
 	case '5':
-		return;
+		exit(0);
 	default:
 		cout << "Такого пункта нет в меню" << endl;
 		Again(StartMenu);

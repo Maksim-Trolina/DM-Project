@@ -96,6 +96,12 @@ Fractions* RequestNumbers(string context,int& lenOutput) {
 		}
 		result[current].lenDenominator = currenDigit;
 		currenDigit = 0;
+
+		if (result[current].denominator[0] == 0) {
+			cout << "¬ведено не то что ожидалось" << endl;
+			Again(PolynomalMenu);
+		}
+
 		if (start == context.length()) {
 			cout << "¬ведено не то что ожидалось" << endl;
 			Again(PolynomalMenu);
