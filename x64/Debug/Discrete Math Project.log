@@ -1,2 +1,19 @@
-﻿  Discrete Math Project.cpp
+﻿  ADD_QQ_Q.cpp
+  CheckForRational.cpp
+  DIV_QQ_Q.cpp
+  IntegerNumberMenu.cpp
+C:\Users\DONBASS\Desktop\DM-Project2\IntegerNumberMenu.cpp(55,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\DONBASS\Desktop\DM-Project2\IntegerNumberMenu.cpp(61,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\DONBASS\Desktop\DM-Project2\IntegerNumberMenu.cpp(93,69): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\DONBASS\Desktop\DM-Project2\IntegerNumberMenu.cpp(99,69): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\DONBASS\Desktop\DM-Project2\IntegerNumberMenu.cpp(131,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\DONBASS\Desktop\DM-Project2\IntegerNumberMenu.cpp(137,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\DONBASS\Desktop\DM-Project2\IntegerNumberMenu.cpp(166,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\DONBASS\Desktop\DM-Project2\IntegerNumberMenu.cpp(172,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\DONBASS\Desktop\DM-Project2\IntegerNumberMenu.cpp(206,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\DONBASS\Desktop\DM-Project2\IntegerNumberMenu.cpp(213,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  MUL_QQ_Q.cpp
+  RED_Q_Q.cpp
+  RationalNumberMenu.cpp
+  Создание кода...
   Discrete Math Project.vcxproj -> C:\Users\DONBASS\Desktop\DM-Project2\x64\Debug\Discrete Math Project.exe

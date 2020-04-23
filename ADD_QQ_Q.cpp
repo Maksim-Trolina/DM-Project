@@ -17,6 +17,7 @@ Fractions ADD_QQ_Q(Fractions num1,Fractions num2)
 
 	result.numerator = ADD_ZZ_Z(len1, len2, result.lenNumerator, num1.sign, num2.sign, result.sign, numerator1, numerator2);
 
+	RED_Q_Q(result.lenNumerator, result.lenDenominator, result.lenNumerator, result.lenDenominator, result.numerator, result.denominator, result.numerator, result.denominator);
 		return result;
 
 
