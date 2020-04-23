@@ -123,6 +123,55 @@ void RationalNumberMenu() {
 		Again(RationalNumberMenu);
 		return;
 	case '3':
+		system("cls");
+		number1 = RequestNumber(CheckForRational, n1.sign);
+		if (number1 == "404%%aa^9*") {
+			Again(RationalNumberMenu);
+			return;
+		}
+		number2 = RequestNumber(CheckForRational, n2.sign);
+		if (number2 == "404%%aa^9*") {
+			Again(RationalNumberMenu);
+			return;
+		}
+		if (n1.sign == 1) {
+			start++;
+		}
+		while (number1[end] != '/') {
+			end++;
+		}
+		n1.numerator = StringToNumber(number1, start, end - 1);
+		n1.lenNumerator = end - start;
+		n1.denominator = StringToNumber(number1, end + 1, (int)number1.length() - 2);
+		n1.lenDenominator = (int)number1.length() - end - 2;
+
+		start = 1;
+		end = 0;
+		if (n2.sign == 1) {
+			start++;
+		}
+		while (number2[end] != '/') {
+			end++;
+		}
+		n2.numerator = StringToNumber(number2, start, end - 1);
+		n2.lenNumerator = end - start;
+		n2.denominator = StringToNumber(number2, end + 1, (int)number2.length() - 2);
+		n2.lenDenominator = (int)number2.length() - end - 2;
+
+		res = SUB_QQ_Q(n1, n2);
+		cout << "Результат: (";
+		if (res.sign == 1) {
+			cout << "-";
+		}
+		for (int i = 0; i < res.lenNumerator; i++) {
+			cout << res.numerator[i];
+		}
+		cout << "/";
+		for (int i = 0; i < res.lenDenominator; i++) {
+			cout << res.denominator[i];
+		}
+		cout << ")" << endl;
+		Again(RationalNumberMenu);
 		return;
 	case '4':
 		system("cls");

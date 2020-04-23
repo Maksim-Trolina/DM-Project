@@ -190,6 +190,7 @@
     <ClCompile Include="StringToNumber.cpp" />
     <ClCompile Include="SUB_NDN_N.cpp" />
     <ClCompile Include="SUB_NN_N.cpp" />
+    <ClCompile Include="SUB_QQ_Q.cpp" />
     <ClCompile Include="SUB_ZZ_Z.cpp" />
   </ItemGroup>
   <ItemGroup>
