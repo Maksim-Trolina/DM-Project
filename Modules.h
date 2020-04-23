@@ -156,5 +156,5 @@ string RequestNumber(bool (check)(string, int&), int& sign);
 //Converts a string to a number
 int* StringToNumber(string number, int start, int end);
 
-//
+//Calculates the difference between two fractions
 Fractions SUB_QQ_Q(Fractions number1, Fractions number2);
