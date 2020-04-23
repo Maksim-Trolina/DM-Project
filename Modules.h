@@ -158,3 +158,6 @@ int* StringToNumber(string number, int start, int end);
 
 //Calculates the difference between two fractions
 Fractions SUB_QQ_Q(Fractions number1, Fractions number2);
+
+//Returns polynomial
+Fractions* RequestNumbers(string context, int& lenOutput);

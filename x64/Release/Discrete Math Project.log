@@ -1,9 +1,7 @@
-﻿  SUB_QQ_Q.cpp
-C:\Users\Trolina\Desktop\DM-Project\SUB_QQ_Q.cpp(8,6): warning C4101: len1: неиспользованная локальная переменная
-C:\Users\Trolina\Desktop\DM-Project\SUB_QQ_Q.cpp(9,6): warning C4101: len2: неиспользованная локальная переменная
+﻿  PolynomalMenu.cpp
   Создание кода
-  2 of 167 functions ( 1.2%) were compiled, the rest were copied from previous compilation.
+  2 of 174 functions ( 1.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    3 functions had inline decision re-evaluated but remain unchanged
+    4 functions had inline decision re-evaluated but remain unchanged
   Создание кода завершено
   Discrete Math Project.vcxproj -> C:\Users\Trolina\Desktop\DM-Project\x64\Release\Discrete Math Project.exe

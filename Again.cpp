@@ -31,4 +31,98 @@ string RequestNumber(bool (check)(string,int&),int& sign) {
 
 }
 
+Fractions* RequestNumbers(string context,int& lenOutput) {
+
+	int start = 0;
+	int len = 0;
+	int current = 0;
+	int currenDigit = 0;
+
+	for (int i = 0; i < context.length(); i++) {
+
+		if (context[i] == ' ') {
+			len++;
+		}
+	}
+
+	len++;
+	lenOutput = len;
+	Fractions* result = new Fractions[len];
+	
+	while (true) {
+		result[current].sign = 0;
+		if (context[start] != '(') {
+			
+			cout << "¬ведено не то что ожидалось" << endl;
+			Again(PolynomalMenu);
+		}
+		start++;
+		if (start == context.length()) {
+			cout << "¬ведено не то что ожидалось" << endl;
+			Again(PolynomalMenu);
+		}
+
+		if (context[start] == '-') {
+			result[current].sign = 1;
+			start++;
+		}
+		result[current].numerator = new int[1000];
+		while(start<context.length() && !(((int)context[start])<48 || ((int)context[start]>57)))
+		{
+			result[current].numerator[currenDigit] = (context[start] - '0');
+			currenDigit++;
+			start++;
+		}
+
+		result[current].lenNumerator = currenDigit;
+		if (start == context.length()) {
+			cout << "¬ведено не то что ожидалось" << endl;
+			Again(PolynomalMenu);
+		}
+
+		if (context[start] != '/') {
+			cout << "¬ведено не то что ожидалось" << endl;
+			Again(PolynomalMenu);
+		}
+
+		start++;
+		currenDigit = 0;
+		result[current].denominator = new int[1000];
+		while (start < context.length() && !(((int)context[start]) < 48 || ((int)context[start] > 57))) {
+
+			result[current].denominator[currenDigit] = (context[start] - '0');
+			currenDigit++;
+			start++;
+		}
+		result[current].lenDenominator = currenDigit;
+		currenDigit = 0;
+		if (start == context.length()) {
+			cout << "¬ведено не то что ожидалось" << endl;
+			Again(PolynomalMenu);
+		}
+
+		if (context[start] != ')') {
+			cout << "¬ведено не то что ожидалось" << endl;
+			Again(PolynomalMenu);
+		}
+		start++;
+		if (start == context.length()) {
+			break;
+		}
+		if (context[start] != ' ') {
+			cout << "¬ведено не то что ожидалось" << endl;
+			Again(PolynomalMenu);
+		}
+		start++;
+		if (start == context.length()) {
+			cout << "¬ведено не то что ожидалось" << endl;
+			Again(PolynomalMenu);
+		}
+
+		current++;
+	}
+
+	return result;
+}
+
 
