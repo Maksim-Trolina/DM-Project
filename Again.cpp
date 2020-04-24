@@ -74,6 +74,11 @@ Fractions* RequestNumbers(string context,int& lenOutput) {
 			start++;
 		}
 
+		if (currenDigit == 0) {
+			cout << "¬ведено не то что ожидалось" << endl;
+			Again(PolynomalMenu);
+		}
+
 		result[current].lenNumerator = currenDigit;
 		if (start == context.length()) {
 			cout << "¬ведено не то что ожидалось" << endl;
@@ -93,6 +98,10 @@ Fractions* RequestNumbers(string context,int& lenOutput) {
 			result[current].denominator[currenDigit] = (context[start] - '0');
 			currenDigit++;
 			start++;
+		}
+		if (currenDigit == 0) {
+			cout << "¬ведено не то что ожидалось" << endl;
+			Again(PolynomalMenu);
 		}
 		result[current].lenDenominator = currenDigit;
 		currenDigit = 0;
