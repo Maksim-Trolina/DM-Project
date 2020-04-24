@@ -167,3 +167,6 @@ Fractions* RequestNumbers(string context, int& lenOutput);
 
 //Dividing two polynoms
 Fractions* DIV_PP_P(Fractions pol1[], Fractions pol2[], int lenPol1, int lenPol2, int& lenPolOutput);
+
+//Remainder of division of two polynoms
+Fractions* MOD_PP_P(Fractions pol1[], Fractions pol2[], int lenPol1, int lenPol2, int& lenPolOutput);
