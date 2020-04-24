@@ -1,5 +1,4 @@
 #include "Modules.h"
-
 Fractions* DIV_PP_P(Fractions pol1[], Fractions pol2[], int lenPol1, int lenPol2, int& lenPolOutput) {
 	Fractions* newNumber;
 	Fractions* divider;
@@ -43,27 +42,19 @@ Fractions* DIV_PP_P(Fractions pol1[], Fractions pol2[], int lenPol1, int lenPol2
 
 	lenPolOutput = lenDividend - lenDivider + 1;
 	newNumber = new Fractions[lenPolOutput];
-
-	/*for (int i = 0; i < lenPolOutput; ++i) {
-		newNumber[i].lenNumerator = 1;
-		newNumber[i].lenDenominator = 1;
-		newNumber[i].numerator = new int[newNumber[0].lenNumerator];
-		newNumber[i].denominator = new int[newNumber[0].lenDenominator];
-		newNumber[i].numerator[0] = 0;
-		newNumber[i].denominator[0] = 1;
-		newNumber[i].sign = 0;
-	}*/
 	Fractions* prom;
 	int lenProm = lenDivider;
+	Fractions* promt;
+	int lenPromt;
 	Fractions x;
 	int i = 0;
 	int k = lenDividend;
 	while (k >= lenDivider) {
-		x = DIV_QQ_Q(dividend[i], divider[0]);
-		newNumber[i] = x;
-		prom = MUL_PQ_P(divider, x, lenProm);
-		prom = MUL_Pxk_P(prom, lenProm, lenDividend - lenDivider, lenProm);
-		dividend = SUB_PP_P(dividend, prom, lenDividend, lenProm, lenDividend);
+			x = DIV_QQ_Q(dividend[i], divider[0]);
+			newNumber[i] = x;
+			prom = MUL_PQ_P(divider, x, lenProm);
+			promt = MUL_Pxk_P(prom, lenProm, k - lenDivider, lenPromt);
+			dividend = SUB_PP_P(dividend, promt, lenDividend, lenPromt, lenDividend);
 		i++;
 		k--;
 	}
@@ -77,4 +68,5 @@ Fractions* DIV_PP_P(Fractions pol1[], Fractions pol2[], int lenPol1, int lenPol2
 	for (int i = 0; i < lenPolOutput; ++i) {
 		result[i] = newNumber[i + nonZeroPos];
 	}
+	return result;
 }
