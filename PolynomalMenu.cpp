@@ -215,6 +215,41 @@ void PolynomalMenu() {
 		Again(PolynomalMenu);
 		return;
 	case '5':
+		system("cls");
+		cout << "Чтобы вернуться назад введите 'back' без кавычек" << endl;
+		cout << "Введите полином: ";
+		cin.clear();
+		while (cin.get() != '\n') {
+			cin.get();
+		}
+		getline(cin, context);
+
+		pol1 = RequestNumbers(context, len1);
+
+		cout << "Чтобы вернуться назад введите 'back' без кавычек" << endl;
+		cout << "Введите полином: ";
+		getline(cin, context);
+		pol2 = RequestNumbers(context, len2);
+		res = DIV_PP_P(pol1, pol2, len1, len2, lenRes);
+		cout << "Результат: ";
+		for (int i = 0; i < lenRes; i++) {
+			cout << "(";
+			if (res[i].sign == 1) {
+				cout << "-";
+			}
+			for (int j = 0; j < res[i].lenNumerator; j++) {
+				cout << res[i].numerator[j];
+			}
+			cout << "/";
+			for (int j = 0; j < res[i].lenDenominator; j++) {
+				cout << res[i].denominator[j];
+			}
+			cout << ")x^";
+			cout << lenRes - i - 1;
+			cout << " ";
+		}
+		cout << endl;
+		Again(PolynomalMenu);
 		return;
 	case '6':
 		return;
