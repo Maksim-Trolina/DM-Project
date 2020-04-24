@@ -194,11 +194,18 @@ void IntegerNumberMenu() {
 			Again(IntegerNumberMenu);
 			return;
 		}
+
+		if (sign1 == 1) {
+			Again(IntegerNumberMenu);
+			return;
+		}
+
 		number2 = RequestNumber(CheckForInteger, sign2);
 		if (number2 == "404%%aa^9*") {
 			Again(IntegerNumberMenu);
 			return;
 		}
+		
 		if (sign1 == 1) {
 			flag1++;
 			start++;
@@ -212,7 +219,7 @@ void IntegerNumberMenu() {
 		}
 		num2 = StringToNumber(number2, start, number2.length() - 1);
 
-		if (num2[0] == 0) {
+		if (num2[0] == 0 || sign2==1) {
 			Again(IntegerNumberMenu);
 			return;
 		}
