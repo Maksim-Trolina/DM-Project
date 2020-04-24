@@ -30,7 +30,7 @@ void PolynomalMenu() {
 	int end = 0;
 	cin >> menuItem;
 
-	if (menuItem.length() < 1 && menuItem.length() > 2) {
+	if (menuItem.length() < 1 || menuItem.length() > 2) {
 
 		Again(PolynomalMenu);
 		return;
