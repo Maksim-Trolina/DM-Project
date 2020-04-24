@@ -38,6 +38,10 @@ Fractions* RequestNumbers(string context,int& lenOutput) {
 	int current = 0;
 	int currenDigit = 0;
 
+	if (context == "back") {
+		Again(PolynomalMenu);
+	}
+
 	for (int i = 0; i < context.length(); i++) {
 
 		if (context[i] == ' ') {

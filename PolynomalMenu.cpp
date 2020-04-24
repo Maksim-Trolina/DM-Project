@@ -54,6 +54,7 @@ void PolynomalMenu() {
 	{
 	case '1':
 		system("cls");
+		cout << "Чтобы вернуться назад введите 'back' без кавычек" << endl;
 		cout << "Введите полином: ";
 		cin.clear();
 		while (cin.get() != '\n') {
@@ -63,7 +64,7 @@ void PolynomalMenu() {
 
 		pol1 = RequestNumbers(context, len1);
 
-
+		cout << "Чтобы вернуться назад введите 'back' без кавычек" << endl;
 		cout << "Введите полином: ";
 		getline(cin, context);
 		pol2 = RequestNumbers(context, len2);
@@ -90,6 +91,7 @@ void PolynomalMenu() {
 		return;
 	case '2':
 		system("cls");
+		cout << "Чтобы вернуться назад введите 'back' без кавычек" << endl;
 		cout << "Введите полином: ";
 		cin.clear();
 		while (cin.get() != '\n') {
@@ -99,7 +101,7 @@ void PolynomalMenu() {
 
 		pol1 = RequestNumbers(context, len1);
 
-
+		cout << "Чтобы вернуться назад введите 'back' без кавычек" << endl;
 		cout << "Введите полином: ";
 		getline(cin, context);
 		pol2 = RequestNumbers(context, len2);
@@ -126,6 +128,7 @@ void PolynomalMenu() {
 		return;
 	case '3':
 		system("cls");
+		cout << "Чтобы вернуться назад введите 'back' без кавычек" << endl;
 		cout << "Введите полином: ";
 		cin.clear();
 		while (cin.get() != '\n') {
@@ -176,6 +179,7 @@ void PolynomalMenu() {
 		return;
 	case '4':
 		system("cls");
+		cout << "Чтобы вернуться назад введите 'back' без кавычек" << endl;
 		cout << "Введите полином: ";
 		cin.clear();
 		while (cin.get() != '\n') {
@@ -185,7 +189,7 @@ void PolynomalMenu() {
 
 		pol1 = RequestNumbers(context, len1);
 
-
+		cout << "Чтобы вернуться назад введите 'back' без кавычек" << endl;
 		cout << "Введите полином: ";
 		getline(cin, context);
 		pol2 = RequestNumbers(context, len2);
@@ -218,6 +222,7 @@ void PolynomalMenu() {
 		return;
 	case '8':
 		system("cls");
+		cout << "Чтобы вернуться назад введите 'back' без кавычек" << endl;
 		cout << "Введите полином: ";
 		cin.clear();
 		while (cin.get() != '\n') {
@@ -250,6 +255,7 @@ void PolynomalMenu() {
 		return;
 	case '9':
 		system("cls");
+		cout << "Чтобы вернуться назад введите 'back' без кавычек" << endl;
 		cout << "Введите полином: ";
 		cin.clear();
 		while (cin.get() != '\n') {
