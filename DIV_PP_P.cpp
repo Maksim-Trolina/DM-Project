@@ -1,5 +1,6 @@
 #include "Modules.h"
 Fractions* DIV_PP_P(Fractions pol1[], Fractions pol2[], int lenPol1, int lenPol2, int& lenPolOutput) {
+	
 	Fractions* newNumber;
 	Fractions* divider;
 	Fractions* dividend;
@@ -8,7 +9,7 @@ Fractions* DIV_PP_P(Fractions pol1[], Fractions pol2[], int lenPol1, int lenPol2
 
 	int nonZeroPos = 0;
 
-	while (pol2[nonZeroPos].numerator[0] == 0) {
+	while (pol2[nonZeroPos].numerator[0] == 0 && nonZeroPos < lenPol2 - 1) {
 		nonZeroPos++;
 	}
 	lenDivider = lenPol2 - nonZeroPos;
@@ -18,7 +19,7 @@ Fractions* DIV_PP_P(Fractions pol1[], Fractions pol2[], int lenPol1, int lenPol2
 	}
 
 	nonZeroPos = 0;
-	while (pol1[nonZeroPos].numerator[0] == 0) {
+	while (pol1[nonZeroPos].numerator[0] == 0 && nonZeroPos < lenPol1 - 1) {
 		nonZeroPos++;
 	}
 	lenDividend = lenPol1 - nonZeroPos;
@@ -39,6 +40,7 @@ Fractions* DIV_PP_P(Fractions pol1[], Fractions pol2[], int lenPol1, int lenPol2
 		newNumber[0].sign = 0;
 		return newNumber;
 	}
+	
 
 	lenPolOutput = lenDividend - lenDivider + 1;
 	newNumber = new Fractions[lenPolOutput];
@@ -60,7 +62,7 @@ Fractions* DIV_PP_P(Fractions pol1[], Fractions pol2[], int lenPol1, int lenPol2
 	}
 
 	nonZeroPos = 0;
-	while (newNumber[nonZeroPos].numerator[0] == 0) {
+	while (newNumber[nonZeroPos].numerator[0] == 0 && nonZeroPos < lenPolOutput - 1) {
 		nonZeroPos++;
 	}
 	lenPolOutput = lenPolOutput - nonZeroPos;
