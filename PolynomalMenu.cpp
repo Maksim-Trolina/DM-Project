@@ -6,18 +6,18 @@ using namespace std;
 
 void PolynomalMenu() {
 	
-	cout << "1)Сложение многочленов" << endl;
-	cout << "2)Вычитание многочленов" << endl;
-	cout << "3)Умножение многочлена на рациональное число" << endl;
-	cout << "4)Умножение многочленов" << endl;
-	cout << "5)Частное от деления одного многочлена на другой" << endl;
-	cout << "6)Остаток от деления одного многочлена на другой" << endl;
-	cout << "7)НОД многочленов" << endl;
-	cout << "8)Вынесение из многочлена НОК знаменателей коэффициентов и НОД числителей" << endl;
-	cout << "9)Производная многочлена" << endl;
-	cout << "10)Преобразование многочлена - кратные корни в простые" << endl;
-	cout << "11)Вернуться назад" << endl;
-	cout << "Чтобы выбрать интересующий вас пункт,необходимо ввести его номер" << endl;
+	cout << "1) Polynomial addition" << endl;
+	cout << "2) Subtraction of polynomials" << endl;
+	cout << "3) Rational multiplication" << endl;
+	cout << "4) Polynomial multiplication" << endl;
+	cout << "5) Quotient from polynomial division" << endl;
+	cout << "6) Remainder of polynomial division" << endl;
+	cout << "7) Greatest Common Divisor of Polynomials" << endl;
+	cout << "8) Removal of denominators of coefficients and LCM of numerators from the polynomial GCF" << endl;
+	cout << "9) Derivative" << endl;
+	cout << "10) Multiple roots to simple" << endl;
+	cout << "11) Back" << endl;
+	cout << "Enter section number" << endl;
 
 	string menuItem;
 	string context;
@@ -55,8 +55,8 @@ void PolynomalMenu() {
 	{
 	case '1':
 		system("cls");
-		cout << "Чтобы вернуться назад введите 'back' без кавычек" << endl;
-		cout << "Введите полином: ";
+		cout << "Enter 'back' without quotes to exit" << endl;
+		cout << "Enter polynomial: ";
 		cin.clear();
 		while (cin.get() != '\n') {
 			cin.get();
@@ -65,12 +65,12 @@ void PolynomalMenu() {
 
 		pol1 = RequestNumbers(context, len1);
 
-		cout << "Чтобы вернуться назад введите 'back' без кавычек" << endl;
-		cout << "Введите полином: ";
+		cout << "Enter 'back' without quotes to exit" << endl;
+		cout << "Enter polynomial: ";
 		getline(cin, context);
 		pol2 = RequestNumbers(context, len2);
 		res = ADD_PP_P(pol1, pol2, len1, len2, lenRes);
-		cout << "Результат: ";
+		cout << "Result: ";
 		for (int i = 0; i < lenRes; i++) {
 			cout << "(";
 			if (res[i].sign == 1) {
@@ -92,8 +92,8 @@ void PolynomalMenu() {
 		return;
 	case '2':
 		system("cls");
-		cout << "Чтобы вернуться назад введите 'back' без кавычек" << endl;
-		cout << "Введите полином: ";
+		cout << "Enter 'back' without quotes to exit" << endl;
+		cout << "Enter polynomial: ";
 		cin.clear();
 		while (cin.get() != '\n') {
 			cin.get();
@@ -102,12 +102,12 @@ void PolynomalMenu() {
 
 		pol1 = RequestNumbers(context, len1);
 
-		cout << "Чтобы вернуться назад введите 'back' без кавычек" << endl;
-		cout << "Введите полином: ";
+		cout << "Enter 'back' without quotes to exit" << endl;
+		cout << "Enter polynomial: ";
 		getline(cin, context);
 		pol2 = RequestNumbers(context, len2);
 		res = SUB_PP_P(pol1, pol2, len1, len2, lenRes);
-		cout << "Результат: ";
+		cout << "Result: ";
 		for (int i = 0; i < lenRes; i++) {
 			cout << "(";
 			if (res[i].sign == 1) {
@@ -129,8 +129,8 @@ void PolynomalMenu() {
 		return;
 	case '3':
 		system("cls");
-		cout << "Чтобы вернуться назад введите 'back' без кавычек" << endl;
-		cout << "Введите полином: ";
+		cout << "Enter 'back' without quotes to exit" << endl;
+		cout << "Enter polynomial: ";
 		cin.clear();
 		while (cin.get() != '\n') {
 			cin.get();
@@ -158,7 +158,7 @@ void PolynomalMenu() {
 
 		res = MUL_PQ_P(pol1, n1,len1);
 		
-		cout << "Результат: ";
+		cout << "Result: ";
 		for (int i = 0; i < len1; i++) {
 			cout << "(";
 			if (res[i].sign == 1) {
@@ -180,8 +180,8 @@ void PolynomalMenu() {
 		return;
 	case '4':
 		system("cls");
-		cout << "Чтобы вернуться назад введите 'back' без кавычек" << endl;
-		cout << "Введите полином: ";
+		cout << "Enter 'back' without quotes to exit" << endl;
+		cout << "Enter polynomial: ";
 		cin.clear();
 		while (cin.get() != '\n') {
 			cin.get();
@@ -190,12 +190,12 @@ void PolynomalMenu() {
 
 		pol1 = RequestNumbers(context, len1);
 
-		cout << "Чтобы вернуться назад введите 'back' без кавычек" << endl;
-		cout << "Введите полином: ";
+		cout << "Enter 'back' without quotes to exit" << endl;
+		cout << "Enter polynomial: ";
 		getline(cin, context);
 		pol2 = RequestNumbers(context, len2);
 		res = MUL_PP_P(pol1, pol2, len1, len2, lenRes);
-		cout << "Результат: ";
+		cout << "Result: ";
 		for (int i = 0; i < lenRes; i++) {
 			cout << "(";
 			if (res[i].sign == 1) {
@@ -217,8 +217,8 @@ void PolynomalMenu() {
 		return;
 	case '5':
 		system("cls");
-		cout << "Чтобы вернуться назад введите 'back' без кавычек" << endl;
-		cout << "Введите полином: ";
+		cout << "Enter 'back' without quotes to exit" << endl;
+		cout << "Enter polynomial: ";
 		cin.clear();
 		while (cin.get() != '\n') {
 			cin.get();
@@ -227,8 +227,8 @@ void PolynomalMenu() {
 
 		pol1 = RequestNumbers(context, len1);
 
-		cout << "Чтобы вернуться назад введите 'back' без кавычек" << endl;
-		cout << "Введите полином: ";
+		cout << "Enter 'back' without quotes to exit" << endl;
+		cout << "Enter polynomial: ";
 		getline(cin, context);
 		pol2 = RequestNumbers(context, len2);
 		col = 0;
@@ -238,11 +238,11 @@ void PolynomalMenu() {
 			}
 		}
 		if (col == len2) {
-			cout << "Введено не то что ожидалось" << endl;
+			cout << "Invalid input" << endl;
 			Again(PolynomalMenu);
 		}
 		res = DIV_PP_P(pol1, pol2, len1, len2, lenRes);
-		cout << "Результат: ";
+		cout << "Result: ";
 		for (int i = 0; i < lenRes; i++) {
 			cout << "(";
 			if (res[i].sign == 1) {
@@ -268,8 +268,8 @@ void PolynomalMenu() {
 		return;
 	case '8':
 		system("cls");
-		cout << "Чтобы вернуться назад введите 'back' без кавычек" << endl;
-		cout << "Введите полином: ";
+		cout << "Enter 'back' without quotes to exit" << endl;
+		cout << "Enter polynomial: ";
 		cin.clear();
 		while (cin.get() != '\n') {
 			cin.get();
@@ -279,7 +279,7 @@ void PolynomalMenu() {
 		pol1 = RequestNumbers(context, len1);
 
 		res = FAC_P_Q(pol1, len1);
-		cout << "Результат: ";
+		cout << "Result: ";
 		for (int i = 0; i < len1; i++) {
 			cout << "(";
 			if (res[i].sign == 1) {
@@ -301,8 +301,8 @@ void PolynomalMenu() {
 		return;
 	case '9':
 		system("cls");
-		cout << "Чтобы вернуться назад введите 'back' без кавычек" << endl;
-		cout << "Введите полином: ";
+		cout << "Enter 'back' without quotes to exit" << endl;
+		cout << "Enter polynomial: ";
 		cin.clear();
 		while (cin.get() != '\n') {
 			cin.get();
@@ -312,7 +312,7 @@ void PolynomalMenu() {
 		pol1 = RequestNumbers(context, len1);
 
 		res = DER_P_P(pol1, len1, lenRes);
-		cout << "Результат: ";
+		cout << "Result: ";
 		for (int i = 0; i < lenRes; i++) {
 			cout << "(";
 			if (res[i].sign == 1) {

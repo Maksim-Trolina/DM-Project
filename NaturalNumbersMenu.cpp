@@ -5,15 +5,15 @@ using namespace std;
 
 void NaturalNumbersMenu() {
 
-	cout << "1)Сложить два натуральных числа" << endl;
-	cout << "2)Вычесть одно натуральное число из другого" << endl;
-	cout << "3)Умножить два натуральных числа" << endl;
-	cout << "4)Вычислить частное от деления большего натурального числа на меньшее или равное натуральное число" << endl;
-	cout << "5)Вычислить остаток от деления большего натурального числа на меньшее или равное натуральное число" << endl;
-	cout << "6)НОД двух натуральных чисел" << endl;
-	cout << "7)НОК двух натуральных чисел" << endl;
-	cout << "8)Вернуться назад" << endl;
-	cout << "Чтобы выбрать интересующий вас пункт,необходимо ввести его номер" << endl;
+	cout << "1) The addition of two natural" << endl;
+	cout << "2) Subtraction from one natural second" << endl;
+	cout << "3) Multiplication of natural" << endl;
+	cout << "4) Division of greater natural into lesser or equal" << endl;
+	cout << "5) The remainder of dividing a greater natural by a lesser or equal" << endl;
+	cout << "6) GCF of naturals" << endl;
+	cout << "7) LCM of naturals" << endl;
+	cout << "8) Back" << endl;
+	cout << "Enter section number" << endl;
 
 	string menuItem;
 	string number1;
@@ -27,7 +27,7 @@ void NaturalNumbersMenu() {
 	cin >> menuItem;
 
 	if (menuItem.length() != 1) {
-		cout << "Такого пункта нет в меню" << endl;
+		cout << "Wrong choice" << endl;
 		Again(NaturalNumbersMenu);
 		return;
 	}
@@ -50,7 +50,7 @@ void NaturalNumbersMenu() {
 		num2 = StringToNumber(number2, 0, number2.length() - 1);
 		result = ADD_NN_N(number1.length(), number2.length(), lenRes, num1, num2);
 
-		cout << "Результат: ";
+		cout << "Result: ";
 		for (int i = 0; i < lenRes; i++) {
 			cout << result[i];
 		}
@@ -83,7 +83,7 @@ void NaturalNumbersMenu() {
 		n2.sign = 0;
 		res = SUB_ZZ_Z(n1, n2);
 
-		cout << "Результат: ";
+		cout << "Result: ";
 		if (res.sign == 1) {
 
 			cout << "-";
@@ -111,7 +111,7 @@ void NaturalNumbersMenu() {
 		num2 = StringToNumber(number2, 0, number2.length() - 1);
 
 		result = MUL_NN_N(number1.length(), number2.length(), lenRes, num1, num2);
-		cout << "Результат: ";
+		cout << "Result: ";
 		for (int i = 0; i < lenRes; i++) {
 			cout << result[i];
 		}
@@ -135,7 +135,7 @@ void NaturalNumbersMenu() {
 		num2 = StringToNumber(number2, 0, number2.length() - 1);
 
 		result = DIV_NN_N(number1.length(), number2.length(), lenRes, num1, num2);
-		cout << "Результат: ";
+		cout << "Result: ";
 		for (int i = 0; i < lenRes; i++) {
 			cout << result[i];
 		}
@@ -159,7 +159,7 @@ void NaturalNumbersMenu() {
 		num2 = StringToNumber(number2, 0, number2.length() - 1);
 
 		result = MOD_NN_N(number1.length(), number2.length(), lenRes, num1, num2);
-		cout << "Результат: ";
+		cout << "Result: ";
 		for (int i = 0; i < lenRes; i++) {
 			cout << result[i];
 		}
@@ -183,7 +183,7 @@ void NaturalNumbersMenu() {
 		num2 = StringToNumber(number2, 0, number2.length() - 1);
 
 		result = GCF_NN_N(number1.length(), number2.length(), lenRes, num1, num2);
-		cout << "Результат: ";
+		cout << "Result: ";
 		for (int i = 0; i < lenRes; i++) {
 			cout << result[i];
 		}
@@ -207,7 +207,7 @@ void NaturalNumbersMenu() {
 		num2 = StringToNumber(number2, 0, number2.length() - 1);
 
 		result = LCM_NN_N(number1.length(), number2.length(), lenRes, num1, num2);
-		cout << "Результат: ";
+		cout << "Result: ";
 		for (int i = 0; i < lenRes; i++) {
 			cout << result[i];
 		}
@@ -219,7 +219,7 @@ void NaturalNumbersMenu() {
 		StartMenu();
 		return;
 	default:
-		cout << "Такого пункта нет в меню" << endl;
+		cout << "Wrong choice" << endl;
 		Again(NaturalNumbersMenu);
 		return;
 	}

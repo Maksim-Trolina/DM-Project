@@ -14,8 +14,8 @@ string RequestNumber(bool (check)(string,int&),int& sign) {
 	string number;
 
 	while (true) {
-		cout << "„тобы вернутьс€ назад введите 'back' без кавычек" << endl;
-		cout << "¬ведите число: ";
+		cout << "Enter 'back' without quotes to exit" << endl;
+		cout << "Enter the number : ";
 		cin >> number;
 		if (!check(number,sign)) {
 
@@ -23,7 +23,7 @@ string RequestNumber(bool (check)(string,int&),int& sign) {
 
 				return "404%%aa^9*";
 			}
-			cout << "¬ведено не то что ожидалось" << endl;
+			cout << "Invalid input" << endl;
 			continue;
 		}
 		return number;
@@ -57,12 +57,12 @@ Fractions* RequestNumbers(string context,int& lenOutput) {
 		result[current].sign = 0;
 		if (context[start] != '(') {
 			
-			cout << "¬ведено не то что ожидалось" << endl;
+			cout << "Invalid input" << endl;
 			Again(PolynomalMenu);
 		}
 		start++;
 		if (start == context.length()) {
-			cout << "¬ведено не то что ожидалось" << endl;
+			cout << "Invalid input" << endl;
 			Again(PolynomalMenu);
 		}
 
@@ -79,18 +79,18 @@ Fractions* RequestNumbers(string context,int& lenOutput) {
 		}
 
 		if (currenDigit == 0) {
-			cout << "¬ведено не то что ожидалось" << endl;
+			cout << "Invalid input" << endl;
 			Again(PolynomalMenu);
 		}
 
 		result[current].lenNumerator = currenDigit;
 		if (start == context.length()) {
-			cout << "¬ведено не то что ожидалось" << endl;
+			cout << "Invalid input" << endl;
 			Again(PolynomalMenu);
 		}
 
 		if (context[start] != '/') {
-			cout << "¬ведено не то что ожидалось" << endl;
+			cout << "Invalid input" << endl;
 			Again(PolynomalMenu);
 		}
 
@@ -104,24 +104,24 @@ Fractions* RequestNumbers(string context,int& lenOutput) {
 			start++;
 		}
 		if (currenDigit == 0) {
-			cout << "¬ведено не то что ожидалось" << endl;
+			cout << "Invalid input" << endl;
 			Again(PolynomalMenu);
 		}
 		result[current].lenDenominator = currenDigit;
 		currenDigit = 0;
 
 		if (result[current].denominator[0] == 0) {
-			cout << "¬ведено не то что ожидалось" << endl;
+			cout << "Invalid input" << endl;
 			Again(PolynomalMenu);
 		}
 
 		if (start == context.length()) {
-			cout << "¬ведено не то что ожидалось" << endl;
+			cout << "Invalid input" << endl;
 			Again(PolynomalMenu);
 		}
 
 		if (context[start] != ')') {
-			cout << "¬ведено не то что ожидалось" << endl;
+			cout << "Invalid input" << endl;
 			Again(PolynomalMenu);
 		}
 		start++;
@@ -129,12 +129,12 @@ Fractions* RequestNumbers(string context,int& lenOutput) {
 			break;
 		}
 		if (context[start] != ' ') {
-			cout << "¬ведено не то что ожидалось" << endl;
+			cout << "Invalid input" << endl;
 			Again(PolynomalMenu);
 		}
 		start++;
 		if (start == context.length()) {
-			cout << "¬ведено не то что ожидалось" << endl;
+			cout << "Invalid input" << endl;
 			Again(PolynomalMenu);
 		}
 
