@@ -164,3 +164,6 @@ Fractions SUB_QQ_Q(Fractions number1, Fractions number2);
 
 //Returns polynomial
 Fractions* RequestNumbers(string context, int& lenOutput);
+
+//Dividing two polynoms
+Fractions* DIV_PP_P(Fractions pol1[], Fractions pol2[], int lenPol1, int lenPol2, int& lenPolOutput);
