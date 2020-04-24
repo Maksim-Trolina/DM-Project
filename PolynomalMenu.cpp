@@ -28,6 +28,7 @@ void PolynomalMenu() {
 	int len1, len2, lenRes;
 	int start = 1;
 	int end = 0;
+	int col = 0;
 	cin >> menuItem;
 
 	if (menuItem.length() < 1 || menuItem.length() > 2) {
@@ -230,6 +231,16 @@ void PolynomalMenu() {
 		cout << "¬ведите полином: ";
 		getline(cin, context);
 		pol2 = RequestNumbers(context, len2);
+		col = 0;
+		for (int i = 0; i < len2; i++) {
+			if (pol2[i].numerator[0] == 0) {
+				col++;
+			}
+		}
+		if (col == len2) {
+			cout << "¬ведено не то что ожидалось" << endl;
+			Again(PolynomalMenu);
+		}
 		res = DIV_PP_P(pol1, pol2, len1, len2, lenRes);
 		cout << "–езультат: ";
 		for (int i = 0; i < lenRes; i++) {
