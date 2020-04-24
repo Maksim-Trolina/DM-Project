@@ -4,13 +4,13 @@
 using namespace std;
 
 void RationalNumberMenu() {
-	cout << "1)Сократить дробь" << endl;
-	cout << "2)Сложение дробей" << endl;
-	cout << "3)Вычитание дробей" << endl;
-	cout << "4)Умножение дробей" << endl;
-	cout << "5)Деление дробей" << endl;
-	cout << "6)Вернуться назад" << endl;
-	cout << "Чтобы выбрать интересующий вас пункт,необходимо ввести его номер" << endl;
+	cout << "1) Fraction reduction" << endl;
+	cout << "2) Fraction Addition" << endl;
+	cout << "3) Fraction Subtraction" << endl;
+	cout << "4) Fraction Multiplication" << endl;
+	cout << "5) Fraction division" << endl;
+	cout << "6) Back" << endl;
+	cout << "Enter section number" << endl;
 
 	string menuItem;
 	string number1;
@@ -23,7 +23,7 @@ void RationalNumberMenu() {
 	cin >> menuItem;
 
 	if (menuItem.length() != 1) {
-		cout << "Такого пункта нет в меню" << endl;
+		cout << "Wrong choice" << endl;
 		Again(RationalNumberMenu);
 		return;
 	}
@@ -56,7 +56,7 @@ void RationalNumberMenu() {
 		res.denominator = new int[res.lenDenominator];
 		RED_Q_Q(n1.lenNumerator, n1.lenDenominator, res.lenNumerator, res.lenDenominator, n1.numerator, n1.denominator, res.numerator, res.denominator);
 
-		cout << "Результат: (";
+		cout << "Result: (";
 		if (res.sign == 1) {
 			cout << "-";
 		}
@@ -108,7 +108,7 @@ void RationalNumberMenu() {
 		n2.lenDenominator = (int)number2.length() - end-2;
 
 		res = ADD_QQ_Q(n1, n2);
-		cout << "Результат: (";
+		cout << "Result: (";
 		if (res.sign == 1) {
 			cout << "-";
 		}
@@ -159,7 +159,7 @@ void RationalNumberMenu() {
 		n2.lenDenominator = (int)number2.length() - end - 2;
 
 		res = SUB_QQ_Q(n1, n2);
-		cout << "Результат: (";
+		cout << "Result: (";
 		if (res.sign == 1) {
 			cout << "-";
 		}
@@ -210,7 +210,7 @@ void RationalNumberMenu() {
 		n2.lenDenominator = (int)number2.length() - end - 2;
 
 		res = MUL_QQ_Q(n1, n2);
-		cout << "Результат: (";
+		cout << "Result: (";
 		if (res.sign == 1) {
 			cout << "-";
 		}
@@ -265,7 +265,7 @@ void RationalNumberMenu() {
 		n2.lenDenominator = (int)number2.length() - end - 2;
 
 		res = DIV_QQ_Q(n1, n2);
-		cout << "Результат: (";
+		cout << "Result: (";
 		if (res.sign == 1) {
 			cout << "-";
 		}
@@ -284,7 +284,7 @@ void RationalNumberMenu() {
 		StartMenu();
 		return;
 	default:
-		cout << "Такого пункта нет в меню" << endl;
+		cout << "Wrong choice" << endl;
 		Again(RationalNumberMenu);
 		return;
 	}

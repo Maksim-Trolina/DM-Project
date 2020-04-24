@@ -5,13 +5,13 @@ using namespace std;
 
 void IntegerNumberMenu() {
 
-	cout << "1)Сложить два целых числа" << endl;
-	cout << "2)Вычесть одно целое число из другого" << endl;
-	cout << "3)Умножить два целых числа" << endl;
-	cout << "4)Вычислить частное от деления большего целого числа на меньшее или равное натуральное число" << endl;
-	cout << "5)Вычислить остаток от деления большег целого числа на меньшее или равное натуральное число" << endl;
-	cout << "6)Вернуться назад" << endl;
-	cout << "Чтобы выбрать интересующий вас пункт,необходимо ввести его номер" << endl;
+	cout << "1) Addition of two integers" << endl;
+	cout << "2) Subtraction of integers" << endl;
+	cout << "3) Multiplication of integers" << endl;
+	cout << "4) Division of an integer by greater than or equal to" << endl;
+	cout << "5) Remainder of dividing an integer by greater than or equal to" << endl;
+	cout << "6) Back" << endl;
+	cout << "Enter section number" << endl;
 
 	string menuItem;
 	string number1;
@@ -29,7 +29,7 @@ void IntegerNumberMenu() {
 	cin >> menuItem;
 
 	if (menuItem.length() != 1) {
-		cout << "Такого пункта нет в меню" << endl;
+		cout << "Wrong choice" << endl;
 		Again(IntegerNumberMenu);
 		return;
 	}
@@ -61,7 +61,7 @@ void IntegerNumberMenu() {
 		num2 = StringToNumber(number2, start, number2.length() - 1);
 
 		result = ADD_ZZ_Z((int)number1.length()-flag1, (int)number2.length()-flag2, lenRes, sign1, sign2, signRes, num1, num2);
-		cout << "Результат: ";
+		cout << "Result: ";
 		if (signRes == 1) {
 			cout << "-";
 		}
@@ -102,7 +102,7 @@ void IntegerNumberMenu() {
 		n1.sign = sign1;
 		n2.sign = sign2;
 		res = SUB_ZZ_Z(n1,n2);
-		cout << "Результат: ";
+		cout << "Result: ";
 		if (res.sign == 1) {
 			cout << "-";
 		}
@@ -137,7 +137,7 @@ void IntegerNumberMenu() {
 		num2 = StringToNumber(number2, start, number2.length() - 1);
 
 		result = MUL_ZZ_Z((int)number1.length() - flag1, (int)number2.length() - flag2, lenRes, sign1, sign2, signRes, num1, num2);
-		cout << "Результат: ";
+		cout << "Result: ";
 		if (signRes == 1) {
 			cout << "-";
 		}
@@ -177,7 +177,7 @@ void IntegerNumberMenu() {
 		}
 
 		result = DIV_ZZ_Z((int)number1.length() - flag1, (int)number2.length() - flag2, lenRes, sign1, sign2, signRes, num1, num2);
-		cout << "Результат: ";
+		cout << "Result: ";
 		if (signRes == 1) {
 			cout << "-";
 		}
@@ -223,7 +223,7 @@ void IntegerNumberMenu() {
 		n1.sign = sign1;
 		n2.sign = sign2;
 		res = MOD_ZZ_Z(n1,n2);
-		cout << "Результат: ";
+		cout << "Result: ";
 		if (res.sign == 1 || sign1 == 1) {
 			cout << "-";
 		}
@@ -238,7 +238,7 @@ void IntegerNumberMenu() {
 		StartMenu();
 		return;
 	default:
-		cout << "Такого пункта нет в меню" << endl;
+		cout << "Wrong choice" << endl;
 		Again(IntegerNumberMenu);
 		return;
 	}
