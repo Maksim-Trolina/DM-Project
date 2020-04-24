@@ -24,7 +24,10 @@ void PolynomalMenu() {
 	Fractions* pol1;
 	Fractions* pol2;
 	Fractions* res;
+	Fractions n1;
 	int len1, len2, lenRes;
+	int start = 1;
+	int end = 0;
 	cin >> menuItem;
 
 	if (menuItem.length() < 1 && menuItem.length() > 2) {
@@ -88,8 +91,90 @@ void PolynomalMenu() {
 	case '2':
 		return;
 	case '3':
+		system("cls");
+		cout << "¬ведите полином: ";
+		cin.clear();
+		while (cin.get() != '\n') {
+			cin.get();
+		}
+		getline(cin, context);
+
+		pol1 = RequestNumbers(context, len1);
+
+		context = RequestNumber(CheckForRational, n1.sign);
+		if (context == "404%%aa^9*") {
+			Again(PolynomalMenu);
+			return;
+		}
+
+		if (n1.sign == 1) {
+			start++;
+		}
+		while (context[end] != '/') {
+			end++;
+		}
+		n1.numerator = StringToNumber(context, start, end - 1);
+		n1.lenNumerator = end - start;
+		n1.denominator = StringToNumber(context, end + 1, (int)context.length() - 2);
+		n1.lenDenominator = (int)context.length() - end - 2;
+
+		res = MUL_PQ_P(pol1, n1,len1);
+		
+		cout << "–езультат: ";
+		for (int i = 0; i < len1; i++) {
+			cout << "(";
+			if (res[i].sign == 1) {
+				cout << "-";
+			}
+			for (int j = 0; j < res[i].lenNumerator; j++) {
+				cout << res[i].numerator[j];
+			}
+			cout << "/";
+			for (int j = 0; j < res[i].lenDenominator; j++) {
+				cout << res[i].denominator[j];
+			}
+			cout << ")x^";
+			cout << len1 - i - 1;
+			cout << " ";
+		}
+		cout << endl;
+		Again(PolynomalMenu);
 		return;
 	case '4':
+		system("cls");
+		cout << "¬ведите полином: ";
+		cin.clear();
+		while (cin.get() != '\n') {
+			cin.get();
+		}
+		getline(cin, context);
+
+		pol1 = RequestNumbers(context, len1);
+
+
+		cout << "¬ведите полином: ";
+		getline(cin, context);
+		pol2 = RequestNumbers(context, len2);
+		res = MUL_PP_P(pol1, pol2, len1, len2, lenRes);
+		cout << "–езультат: ";
+		for (int i = 0; i < lenRes; i++) {
+			cout << "(";
+			if (res[i].sign == 1) {
+				cout << "-";
+			}
+			for (int j = 0; j < res[i].lenNumerator; j++) {
+				cout << res[i].numerator[j];
+			}
+			cout << "/";
+			for (int j = 0; j < res[i].lenDenominator; j++) {
+				cout << res[i].denominator[j];
+			}
+			cout << ")x^";
+			cout << lenRes - i - 1;
+			cout << " ";
+		}
+		cout << endl;
+		Again(PolynomalMenu);
 		return;
 	case '5':
 		return;
@@ -98,8 +183,68 @@ void PolynomalMenu() {
 	case '7':
 		return;
 	case '8':
+		system("cls");
+		cout << "¬ведите полином: ";
+		cin.clear();
+		while (cin.get() != '\n') {
+			cin.get();
+		}
+		getline(cin, context);
+
+		pol1 = RequestNumbers(context, len1);
+
+		res = FAC_P_Q(pol1, len1);
+		cout << "–езультат: ";
+		for (int i = 0; i < len1; i++) {
+			cout << "(";
+			if (res[i].sign == 1) {
+				cout << "-";
+			}
+			for (int j = 0; j < res[i].lenNumerator; j++) {
+				cout << res[i].numerator[j];
+			}
+			cout << "/";
+			for (int j = 0; j < res[i].lenDenominator; j++) {
+				cout << res[i].denominator[j];
+			}
+			cout << ")x^";
+			cout << len1 - i - 1;
+			cout << " ";
+		}
+		cout << endl;
+		Again(PolynomalMenu);
 		return;
 	case '9':
+		system("cls");
+		cout << "¬ведите полином: ";
+		cin.clear();
+		while (cin.get() != '\n') {
+			cin.get();
+		}
+		getline(cin, context);
+
+		pol1 = RequestNumbers(context, len1);
+
+		res = DER_P_P(pol1, len1, lenRes);
+		cout << "–езультат: ";
+		for (int i = 0; i < lenRes; i++) {
+			cout << "(";
+			if (res[i].sign == 1) {
+				cout << "-";
+			}
+			for (int j = 0; j < res[i].lenNumerator; j++) {
+				cout << res[i].numerator[j];
+			}
+			cout << "/";
+			for (int j = 0; j < res[i].lenDenominator; j++) {
+				cout << res[i].denominator[j];
+			}
+			cout << ")x^";
+			cout << lenRes - i - 1;
+			cout << " ";
+		}
+		cout << endl;
+		Again(PolynomalMenu);
 		return;
 	default:
 		Again(PolynomalMenu);
