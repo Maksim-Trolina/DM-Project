@@ -82,8 +82,14 @@ Fractions* RequestNumbers(string context,int& lenOutput) {
 			cout << "Invalid input" << endl;
 			Again(PolynomalMenu);
 		}
-
+			
 		result[current].lenNumerator = currenDigit;
+
+		if (result[current].numerator[0] == 0 && result[current].lenNumerator > 1) {
+			cout << "¬ведено не то что ожидалось" << endl;
+			Again(PolynomalMenu);
+		}
+
 		if (start == context.length()) {
 			cout << "Invalid input" << endl;
 			Again(PolynomalMenu);
