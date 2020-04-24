@@ -8,8 +8,8 @@ void IntegerNumberMenu() {
 	cout << "1) Addition of two integers" << endl;
 	cout << "2) Subtraction of integers" << endl;
 	cout << "3) Multiplication of integers" << endl;
-	cout << "4) Division of an integer by greater than or equal to" << endl;
-	cout << "5) Remainder of dividing an integer by greater than or equal to" << endl;
+	cout << "4) Division of an integer by an integer" << endl;
+	cout << "5) The remainder of dividing a non-negative integer by a natural number" << endl;
 	cout << "6) Back" << endl;
 	cout << "Enter section number" << endl;
 
