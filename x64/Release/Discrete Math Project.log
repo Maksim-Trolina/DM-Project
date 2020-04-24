@@ -1,14 +1,26 @@
-﻿  IntegerNumberMenu.cpp
-C:\Users\Trolina\Desktop\DM-Project\IntegerNumberMenu.cpp(55,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\Trolina\Desktop\DM-Project\IntegerNumberMenu.cpp(61,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\Trolina\Desktop\DM-Project\IntegerNumberMenu.cpp(93,69): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\Trolina\Desktop\DM-Project\IntegerNumberMenu.cpp(99,69): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\Trolina\Desktop\DM-Project\IntegerNumberMenu.cpp(131,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\Trolina\Desktop\DM-Project\IntegerNumberMenu.cpp(137,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\Trolina\Desktop\DM-Project\IntegerNumberMenu.cpp(166,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\Trolina\Desktop\DM-Project\IntegerNumberMenu.cpp(172,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\Trolina\Desktop\DM-Project\IntegerNumberMenu.cpp(213,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\Trolina\Desktop\DM-Project\IntegerNumberMenu.cpp(220,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+﻿  NaturalNumbersMenu.cpp
+C:\Users\Trolina\Desktop\DM-Project\NaturalNumbersMenu.cpp(49,57): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Trolina\Desktop\DM-Project\NaturalNumbersMenu.cpp(50,57): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Trolina\Desktop\DM-Project\NaturalNumbersMenu.cpp(51,75): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Trolina\Desktop\DM-Project\NaturalNumbersMenu.cpp(73,57): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Trolina\Desktop\DM-Project\NaturalNumbersMenu.cpp(74,57): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Trolina\Desktop\DM-Project\NaturalNumbersMenu.cpp(79,37): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Trolina\Desktop\DM-Project\NaturalNumbersMenu.cpp(82,37): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Trolina\Desktop\DM-Project\NaturalNumbersMenu.cpp(110,57): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Trolina\Desktop\DM-Project\NaturalNumbersMenu.cpp(111,57): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Trolina\Desktop\DM-Project\NaturalNumbersMenu.cpp(113,75): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Trolina\Desktop\DM-Project\NaturalNumbersMenu.cpp(134,57): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Trolina\Desktop\DM-Project\NaturalNumbersMenu.cpp(135,57): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Trolina\Desktop\DM-Project\NaturalNumbersMenu.cpp(137,75): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Trolina\Desktop\DM-Project\NaturalNumbersMenu.cpp(158,57): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Trolina\Desktop\DM-Project\NaturalNumbersMenu.cpp(159,57): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Trolina\Desktop\DM-Project\NaturalNumbersMenu.cpp(161,75): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Trolina\Desktop\DM-Project\NaturalNumbersMenu.cpp(182,57): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Trolina\Desktop\DM-Project\NaturalNumbersMenu.cpp(183,57): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Trolina\Desktop\DM-Project\NaturalNumbersMenu.cpp(185,75): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Trolina\Desktop\DM-Project\NaturalNumbersMenu.cpp(206,57): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Trolina\Desktop\DM-Project\NaturalNumbersMenu.cpp(207,57): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Trolina\Desktop\DM-Project\NaturalNumbersMenu.cpp(209,75): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
   Создание кода
   1 of 182 functions ( 0.5%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
