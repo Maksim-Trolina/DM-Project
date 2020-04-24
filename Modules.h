@@ -117,8 +117,11 @@ Fractions* PolynomialFilling(int lenPolinom);
 //The imposition of polynomial LCM of denominators of coefficients and the GCD of the numerators
 Fractions* FAC_P_Q(Fractions* polinom, int lenPolinom);
 
-//
+//Multypling two polynoms
 Fractions* MUL_PP_P(Fractions* pol1, Fractions* pol2, int lenPol1, int lenPol2, int& lenPolOutput);
+
+//Polymonial substract
+Fractions* SUB_PP_P(Fractions pol1[], Fractions pol2[], int lenPol1, int lenPol2, int& lenPolOutput);
 
 //Prints polynomial
 void PolynomialReading(Fractions nums[], int lenNums);

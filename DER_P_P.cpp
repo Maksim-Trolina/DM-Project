@@ -1,11 +1,25 @@
 #include "Modules.h"
 
 Fractions* DER_P_P(Fractions* polinom, int lenPolinom, int& lenPolinomOutput) {
-	
-	lenPolinomOutput = lenPolinom - 1;
 
-	Fractions* newNumber = new Fractions[lenPolinomOutput];
+	Fractions* newNumber;
 	Fractions fracDegMonom;
+
+	if (lenPolinom == 1) {
+		lenPolinomOutput = 1;
+		newNumber = new Fractions[lenPolinomOutput];
+		newNumber[0].sign = 0;
+		newNumber[0].lenNumerator = 1;
+		newNumber[0].lenDenominator = 1;
+		newNumber[0].numerator = new int[newNumber[0].lenNumerator];
+		newNumber[0].denominator = new int[newNumber[0].lenDenominator];
+		newNumber[0].numerator[0] = 0;
+		newNumber[0].denominator[0] = 1;
+		return newNumber;
+	}
+
+	lenPolinomOutput = lenPolinom - 1;
+	newNumber = new Fractions[lenPolinomOutput];
 
 	for (int i = 0; i < lenPolinom; ++i) {
 	

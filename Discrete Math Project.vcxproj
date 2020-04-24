@@ -157,7 +157,7 @@
     <ClCompile Include="CheckForNatural.cpp" />
     <ClCompile Include="CheckForRational.cpp" />
     <ClCompile Include="COM_NN_D.cpp" />
-    <ClCompile Include="DER_P_Pcpp.cpp" />
+    <ClCompile Include="DER_P_P.cpp" />
     <ClCompile Include="Discrete Math Project.cpp" />
     <ClCompile Include="DIV_NN_Dk.cpp" />
     <ClCompile Include="DIV_NN_N.cpp" />
@@ -190,6 +190,7 @@
     <ClCompile Include="StringToNumber.cpp" />
     <ClCompile Include="SUB_NDN_N.cpp" />
     <ClCompile Include="SUB_NN_N.cpp" />
+    <ClCompile Include="SUB_PP_P.cpp" />
     <ClCompile Include="SUB_QQ_Q.cpp" />
     <ClCompile Include="SUB_ZZ_Z.cpp" />
   </ItemGroup>
