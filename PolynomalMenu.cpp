@@ -89,6 +89,40 @@ void PolynomalMenu() {
 		Again(PolynomalMenu);
 		return;
 	case '2':
+		system("cls");
+		cout << "¬ведите полином: ";
+		cin.clear();
+		while (cin.get() != '\n') {
+			cin.get();
+		}
+		getline(cin, context);
+
+		pol1 = RequestNumbers(context, len1);
+
+
+		cout << "¬ведите полином: ";
+		getline(cin, context);
+		pol2 = RequestNumbers(context, len2);
+		res = SUB_PP_P(pol1, pol2, len1, len2, lenRes);
+		cout << "–езультат: ";
+		for (int i = 0; i < lenRes; i++) {
+			cout << "(";
+			if (res[i].sign == 1) {
+				cout << "-";
+			}
+			for (int j = 0; j < res[i].lenNumerator; j++) {
+				cout << res[i].numerator[j];
+			}
+			cout << "/";
+			for (int j = 0; j < res[i].lenDenominator; j++) {
+				cout << res[i].denominator[j];
+			}
+			cout << ")x^";
+			cout << lenRes - i - 1;
+			cout << " ";
+		}
+		cout << endl;
+		Again(PolynomalMenu);
 		return;
 	case '3':
 		system("cls");
