@@ -175,4 +175,4 @@ Fractions* MOD_PP_P(Fractions pol1[], Fractions pol2[], int lenPol1, int lenPol2
 Fractions* GCF_PP_P(Fractions* pol1, Fractions* pol2, int lenPol1, int lenPol2, int& lenRes);
 
 //The transformation of the polynomial — time roots in the simple
-Fractions* NMR_P_P(Fractions* pol, int lenPol, int lenPolOutput);
+Fractions* NMR_P_P(Fractions* pol, int lenPol, int& lenPolOutput);

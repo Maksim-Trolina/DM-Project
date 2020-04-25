@@ -41,6 +41,46 @@ void PolynomalMenu() {
 		
 		if (menuItem == "10") {
 
+			system("cls");
+			cout << "Enter 'back' without quotes to exit" << endl;
+			cout << "Enter polynomial: ";
+			cin.clear();
+			while (cin.get() != '\n') {
+				cin.get();
+			}
+			getline(cin, context);
+
+			pol1 = RequestNumbers(context, len1);
+			col = 0;
+			for (int i = 0; i < len1; i++) {
+				if (pol1[i].numerator[0] == 0) {
+					col++;
+				}
+			}
+			if (col == len1) {
+				cout << "Invalid input" << endl;
+				Again(PolynomalMenu);
+			}
+			res = NMR_P_P(pol1, len1, lenRes);
+			cout << "Result: ";
+			for (int i = 0; i < lenRes; i++) {
+				cout << "(";
+				if (res[i].sign == 1) {
+					cout << "-";
+				}
+				for (int j = 0; j < res[i].lenNumerator; j++) {
+					cout << res[i].numerator[j];
+				}
+				cout << "/";
+				for (int j = 0; j < res[i].lenDenominator; j++) {
+					cout << res[i].denominator[j];
+				}
+				cout << ")x^";
+				cout << lenRes - i - 1;
+				cout << " ";
+			}
+			cout << endl;
+			Again(PolynomalMenu);
 			return;
 		}
 		if (menuItem == "11") {

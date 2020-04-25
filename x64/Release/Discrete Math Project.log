@@ -38,6 +38,7 @@ C:\Users\Trolina\Desktop\DM-Project\IntegerNumberMenu.cpp(220,61): warning C4267
   MUL_QQ_Q.cpp
   MUL_ZM_Z.cpp
   MUL_ZZ_Z.cpp
+  NMR_P_P.cpp
   NaturalNumbersMenu.cpp
 C:\Users\Trolina\Desktop\DM-Project\NaturalNumbersMenu.cpp(49,57): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
 C:\Users\Trolina\Desktop\DM-Project\NaturalNumbersMenu.cpp(50,57): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
@@ -72,12 +73,12 @@ C:\Users\Trolina\Desktop\DM-Project\NaturalNumbersMenu.cpp(209,75): warning C426
   SUB_QQ_Q.cpp
 C:\Users\Trolina\Desktop\DM-Project\SUB_QQ_Q.cpp(8,6): warning C4101: len1: неиспользованная локальная переменная
 C:\Users\Trolina\Desktop\DM-Project\SUB_QQ_Q.cpp(9,6): warning C4101: len2: неиспользованная локальная переменная
-  SUB_ZZ_Z.cpp
   Компиляция...
+  SUB_ZZ_Z.cpp
   StartMenu.cpp
   Создание кода
-  13 of 183 functions ( 7.1%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    3 functions had inline decision re-evaluated but remain unchanged
+  8 of 184 functions ( 4.3%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
+    14 functions had inline decision re-evaluated but remain unchanged
   Создание кода завершено
   Discrete Math Project.vcxproj -> C:\Users\Trolina\Desktop\DM-Project\x64\Release\Discrete Math Project.exe
