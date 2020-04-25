@@ -305,8 +305,8 @@ void PolynomalMenu() {
 		return;
 	case '6':
 		system("cls");
-		cout << "Чтобы вернуться назад введите 'back' без кавычек" << endl;
-		cout << "Введите полином: ";
+		cout << "Enter 'back' without quotes to exit" << endl;
+		cout << "Enter polynomial: ";
 		cin.clear();
 		while (cin.get() != '\n') {
 			cin.get();
@@ -315,8 +315,8 @@ void PolynomalMenu() {
 
 		pol1 = RequestNumbers(context, len1);
 
-		cout << "Чтобы вернуться назад введите 'back' без кавычек" << endl;
-		cout << "Введите полином: ";
+		cout << "Enter 'back' without quotes to exit" << endl;
+		cout << "Enter polynomial: ";
 		getline(cin, context);
 		pol2 = RequestNumbers(context, len2);
 		col = 0;
@@ -326,11 +326,11 @@ void PolynomalMenu() {
 			}
 		}
 		if (col == len2) {
-			cout << "Введено не то что ожидалось" << endl;
+			cout << "Invalid input" << endl;
 			Again(PolynomalMenu);
 		}
 		res = MOD_PP_P(pol1, pol2, len1, len2, lenRes);
-		cout << "Результат: ";
+		cout << "Result: ";
 		for (int i = 0; i < lenRes; i++) {
 			cout << "(";
 			if (res[i].sign == 1) {
@@ -379,7 +379,7 @@ void PolynomalMenu() {
 			}
 		}
 		if (col2 == len2 && col == len1) {
-			cout << "Введено не то что ожидалось" << endl;
+			cout << "Invalid input" << endl;
 			Again(PolynomalMenu);
 		}
 		res = GCF_PP_P(pol1, pol2, len1, len2, lenRes);
