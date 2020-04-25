@@ -10,5 +10,6 @@ Fractions* NMR_P_P(Fractions* pol, int lenPol, int& lenPolOutput) {
 	int lenDiv;
 	Fractions* div = DIV_PP_P(pol, gcf, lenPol, lenGcf, lenDiv);
 	lenPolOutput = lenDiv;
-	return div;
+	Fractions* res = FAC_P_Q(div, lenDiv);
+	return res;
 }
