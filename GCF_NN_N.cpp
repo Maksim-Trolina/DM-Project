@@ -5,10 +5,21 @@ using namespace std;
 int* GCF_NN_N(int lenNumber1, int lenNumber2, int& lenOutput, int number1[], int number2[]) {
 
 
-	if ((!NZER_N_B(number1)) || (!NZER_N_B(number2))) {
-		return 0;
-	}
+	/*if ((!NZER_N_B(number1)) || (!NZER_N_B(number2))) {
+		int lenRes = 1;
+		int* res = new int[lenRes];
+		res[0] = 0;
+		return res;
+	}*/
 
+	if (NZER_N_B(number1) && !(NZER_N_B(number2))) {
+		lenOutput = lenNumber1;
+		return number1;
+	}
+	else if (!(NZER_N_B(number1)) && NZER_N_B(number2)) {
+		lenOutput = lenNumber2;
+		return number2;
+	}
 	int flag = COM_NN_D(lenNumber1, lenNumber2, number1, number2);
 
 	int* localnumber1 = new int[lenNumber1];

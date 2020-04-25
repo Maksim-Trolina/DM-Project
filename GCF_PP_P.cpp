@@ -108,5 +108,45 @@ Fractions* GCF_PP_P(Fractions* pol1, Fractions* pol2, int lenPol1, int lenPol2, 
 
 	lenRes = lenDiv;
 
-	return divider;
+	Fractions* result = FAC_P_Q(divider, lenRes);
+
+	return result;
+
+	/*Fractions* pol1Copy;
+	Fractions* pol2Copy;
+	int lenPol1Copy;
+	int lenPol2Copy;
+
+	Fractions* ost;
+	int lenOst;
+
+	int nonZeroPos = 0;
+	while (pol1[nonZeroPos].numerator[0] == 0 && nonZeroPos < lenPol1 - 1) {
+		nonZeroPos++;
+	}
+	lenPol1Copy = lenPol1 - nonZeroPos;
+	pol1Copy = new Fractions[lenPol1Copy];
+	for (int i = 0; i < lenPol1Copy; ++i) {
+		pol1Copy[i] = pol1[i + nonZeroPos];
+	}
+
+	nonZeroPos = 0;
+	while (pol2[nonZeroPos].numerator[0] == 0 && nonZeroPos < lenPol2 - 1) {
+		nonZeroPos++;
+	}
+	lenPol2Copy = lenPol2 - nonZeroPos;
+	pol2Copy = new Fractions[lenPol2Copy];
+	for (int i = 0; i < lenPol2Copy; ++i) {
+		pol2Copy[i] = pol2[i + nonZeroPos];
+	}
+	int lenNul = 1;
+	Fractions* nul = new Fractions[lenNul];
+	nul[0].lenNumerator = 1;
+	nul[0].lenDenominator = 1;
+	nul[0].sign = 0;
+	nul[0].numerator = new int[nul[0].lenNumerator];
+	nul[0].denominator = new int[nul[0].lenDenominator];
+	nul[0].numerator[0] = 0;
+	nul[0].denominator[0] = 1;*/
+
 }

@@ -170,6 +170,7 @@
     <ClCompile Include="MOD_PP_P.cpp" />
     <ClCompile Include="MUL_PP_P.cpp" />
     <ClCompile Include="NaturalNumbersMenu.cpp" />
+    <ClCompile Include="NMR_P_P.cpp" />
     <ClCompile Include="PolynomalMenu.cpp" />
     <ClCompile Include="RationalNumberMenu.cpp" />
     <ClCompile Include="StartMenu.cpp" />

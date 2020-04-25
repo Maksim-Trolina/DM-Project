@@ -1,22 +1,20 @@
-﻿  ADD_1N_N.cpp
-  ADD_NN_N.cpp
+﻿  ADD_NN_N.cpp
   ADD_PP_P.cpp
   ADD_QQ_Q.cpp
   ADD_ZZ_Z.cpp
   Again.cpp
-  CheckForInteger.cpp
-  CheckForNatural.cpp
   CheckForRational.cpp
-  COM_NN_D.cpp
   DER_P_P.cpp
-  Discrete Math Project.cpp
   DIV_NN_Dk.cpp
   DIV_NN_N.cpp
   DIV_PP_P.cpp
   DIV_QQ_Q.cpp
   DIV_ZZ_Z.cpp
+  Discrete Math Project.cpp
   FAC_P_Q.cpp
+  GCF_NN_N.cpp
   GCF_PP_P.cpp
+  INT_Q_B.cpp
   IntegerNumberMenu.cpp
 C:\Users\DONBASS\Desktop\DM-Project2\IntegerNumberMenu.cpp(55,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
 C:\Users\DONBASS\Desktop\DM-Project2\IntegerNumberMenu.cpp(61,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
@@ -28,11 +26,20 @@ C:\Users\DONBASS\Desktop\DM-Project2\IntegerNumberMenu.cpp(166,61): warning C426
 C:\Users\DONBASS\Desktop\DM-Project2\IntegerNumberMenu.cpp(172,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
 C:\Users\DONBASS\Desktop\DM-Project2\IntegerNumberMenu.cpp(213,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
 C:\Users\DONBASS\Desktop\DM-Project2\IntegerNumberMenu.cpp(220,61): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  LCM_NN_N.cpp
+  MOD_NN_N.cpp
   Создание кода...
-C:\Users\DONBASS\Desktop\DM-Project2\GCF_PP_P.cpp(19): error C4716: GCF_PP_P: должна возвращать значение
   Компиляция...
   MOD_PP_P.cpp
+  MOD_ZZ_Z.cpp
+  MUL_NN_N.cpp
   MUL_PP_P.cpp
+  MUL_PQ_P.cpp
+  MUL_Pxk_P.cpp
+  MUL_QQ_Q.cpp
+  MUL_ZM_Z.cpp
+  MUL_ZZ_Z.cpp
+  NMR_P_P.cpp
   NaturalNumbersMenu.cpp
 C:\Users\DONBASS\Desktop\DM-Project2\NaturalNumbersMenu.cpp(49,57): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
 C:\Users\DONBASS\Desktop\DM-Project2\NaturalNumbersMenu.cpp(50,57): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
@@ -57,33 +64,19 @@ C:\Users\DONBASS\Desktop\DM-Project2\NaturalNumbersMenu.cpp(206,57): warning C42
 C:\Users\DONBASS\Desktop\DM-Project2\NaturalNumbersMenu.cpp(207,57): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
 C:\Users\DONBASS\Desktop\DM-Project2\NaturalNumbersMenu.cpp(209,75): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
   PolynomalMenu.cpp
-  RationalNumberMenu.cpp
-  StartMenu.cpp
-  GCF_NN_N.cpp
-  INT_Q_B.cpp
-  LCM_NN_N.cpp
-  MOD_NN_N.cpp
-  MOD_ZZ_Z.cpp
-  MUL_ND_N.cpp
-  MUL_Nk_N.cpp
-  MUL_NN_N.cpp
-  MUL_PQ_P.cpp
-  MUL_Pxk_P.cpp
-  MUL_QQ_Q.cpp
-  MUL_ZZ_Z.cpp
-  NZER_N_B.cpp
-  MUL_ZM_Z.cpp
-  Создание кода...
-  Компиляция...
   PolynomialFilling.cpp
   PolynomialReading.cpp
   RED_Q_Q.cpp
-  StringToNumber.cpp
+  RationalNumberMenu.cpp
   SUB_NDN_N.cpp
   SUB_NN_N.cpp
   SUB_PP_P.cpp
   SUB_QQ_Q.cpp
 C:\Users\DONBASS\Desktop\DM-Project2\SUB_QQ_Q.cpp(8,6): warning C4101: len1: неиспользованная локальная переменная
 C:\Users\DONBASS\Desktop\DM-Project2\SUB_QQ_Q.cpp(9,6): warning C4101: len2: неиспользованная локальная переменная
-  SUB_ZZ_Z.cpp
   Создание кода...
+  Компиляция...
+  SUB_ZZ_Z.cpp
+  StartMenu.cpp
+  Создание кода...
+  Discrete Math Project.vcxproj -> C:\Users\DONBASS\Desktop\DM-Project2\x64\Debug\Discrete Math Project.exe

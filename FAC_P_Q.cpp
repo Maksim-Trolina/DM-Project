@@ -5,8 +5,27 @@ Fractions* FAC_P_Q(Fractions* polinom, int lenPolinom) {
 	Fractions* newPol = new Fractions[lenPolinom];
 
 	if (lenPolinom == 1) {
+		newPol[0].lenNumerator = 1;
+		newPol[0].lenDenominator = 1;
+		newPol[0].sign = 0;
+		newPol[0].numerator = new int[newPol[0].lenNumerator];
+		newPol[0].denominator = new int[newPol[0].lenDenominator];
+		if (polinom[0].numerator[0] == 0) {
+			newPol[0].numerator[0] = 0;
+		}
+		else newPol[0].numerator[0] = 1;
+		newPol[0].denominator[0] = 1;
 		return newPol;
 	}
+
+	for (int i = 0; i < lenPolinom; ++i) {
+		if (polinom[i].numerator[0] == 0) {
+			polinom[i].lenDenominator = 1;
+			polinom[i].denominator = new int[polinom[i].lenDenominator];
+			polinom[i].denominator[0] = 1;
+		}
+	}
+
 	int* gcfNumerator = polinom[0].numerator;
 	int lenGcfNumerator = polinom[0].lenNumerator;
 	int* lcmDenominator = polinom[0].denominator;
